@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; min-height: 100vh; }
+  .header { background: #1a1a18; color: #fff; padding: 2.5rem 2rem 2rem; }
+  .header-inner { max-width: 760px; margin: 0 auto; }
+  .header-eyebrow { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #aaa; margin-bottom: .6rem; }
+  .header-title { font-size: 28px; font-weight: 700; letter-spacing: -.02em; margin-bottom: .4rem; }
+  .header-sub { font-size: 14px; color: #999; }
+  .main { max-width: 760px; margin: 0 auto; padding: 2rem; }
+  .section-label { font-size: 11px; font-weight: 700; color: #888; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1rem; margin-top: 2rem; }
+  .section-label:first-child { margin-top: 0; }
+  .briefing-card { background: #fff; border: 1px solid #e5e3db; border-radius: 14px; padding: 1.25rem 1.4rem; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: inherit; transition: box-shadow .15s, transform .15s; }
+  .briefing-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); transform: translateY(-1px); }
+  .card-left { flex: 1; }
+  .card-badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 9px; border-radius: 4px; margin-bottom: 7px; }
+  .badge-today { background: #EEEDFE; color: #534AB7; }
+  .badge-prev { background: #f0efea; color: #888; }
+  .card-date { font-size: 13px; color: #999; margin-bottom: 4px; }
+  .card-title { font-size: 16px; font-weight: 700; line-height: 1.4; margin-bottom: 5px; }
+  .card-summary { font-size: 13px; color: #666; line-height: 1.6; }
+  .card-arrow { width: 32px; height: 32px; border-radius: 50%; background: #f5f4f0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-left: 1rem; font-size: 16px; color: #888; transition: background .15s; }
+  .briefing-card:hover .card-arrow { background: #EEEDFE; color: #534AB7; }
+  .info-box { background: #fff; border: 1px solid #e5e3db; border-radius: 14px; padding: 1.1rem 1.4rem; margin-top: 2rem; display: flex; gap: 12px; }
+  .info-icon { font-size: 18px; flex-shrink: 0; }
+  .info-text { font-size: 13px; color: #666; line-height: 1.7; }
+  .info-text b { color: #333; font-weight: 700; }
+  .footer { max-width: 760px; margin: 2rem auto 0; padding: 1.5rem 2rem; font-size: 12px; color: #bbb; border-top: 1px solid #e5e3db; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-inner">
+    <div class="header-eyebrow">Daily Briefing</div>
+    <div class="header-title">📊 주식투자 데일리 브리핑</div>
+    <div class="header-sub">매일경제 · 한국경제 · 서울경제 · 조선비즈 · 파이낸셜뉴스 주요 뉴스 기반</div>
+  </div>
+</div>
+<div class="main">
+  <div class="section-label">최신 브리핑</div>
+  <a class="briefing-card" href="briefing_20260503.html">
+    <div class="card-left">
+      <div class="card-badge badge-today">오늘 · 최신 · 개장전날판</div>
+      <div class="card-date">2026년 5월 3일 (일)</div>
+      <div class="card-title">나스닥 2.5만 첫 돌파 · 애플 +3.24% · 유가 하락 · 이란 협상 기대 복원</div>
+      <div class="card-summary">5/4 코스피 갭 상승 기대 · 삼성바이오 파업 이틀째 · 이번 주 고용보고서·워시 청문회·금통위</div>
+    </div>
+    <div class="card-arrow">→</div>
+  </a>
+  <div class="section-label">이전 브리핑</div>
+  <a class="briefing-card" href="briefing_20260502.html">
+    <div class="card-left">
+      <div class="card-badge badge-prev">2026.05.02</div>
+      <div class="card-date">2026년 5월 2일 (토) · 주말판</div>
+      <div class="card-title">슈퍼위크 총결산 · 빅테크 5사 서프라이즈 · 삼성 파업 D-19</div>
+      <div class="card-summary">AI 수익화 원년 확인 · FOMC 4명 반대표 · 브렌트유 $107 · 노사 도미노</div>
+    </div>
+    <div class="card-arrow">→</div>
+  </a>
+  <a class="briefing-card" href="briefing_20260501.html">
+    <div class="card-left">
+      <div class="card-badge badge-prev">2026.05.01</div>
+      <div class="card-date">2026년 5월 1일 (금) · 노동절</div>
+      <div class="card-title">구글 독주·메타 급락 · 삼성 HBM4 완판 · 유가 $107</div>
+      <div class="card-summary">빅테크 혼조 서프라이즈 · GDP 2.0% · PCE 3.5% · FOMC 4명 반대표</div>
+    </div>
+    <div class="card-arrow">→</div>
+  </a>
+  <a class="briefing-card" href="briefing_20260430.html">
+    <div class="card-left">
+      <div class="card-badge badge-prev">2026.04.30</div>
+      <div class="card-date">2026년 4월 30일 (목)</div>
+      <div class="card-title">삼성전자 컨콜 · FOMC 매파적 동결 · 빅테크 대기</div>
+      <div class="card-summary">영업익 57.2조 역대 최대 · 파월 마지막 기자회견</div>
+    </div>
+    <div class="card-arrow">→</div>
+  </a>
+  <div class="info-box">
+    <div class="info-icon">💡</div>
+    <div class="info-text">
+      <b>브리핑 이용 안내</b><br>
+      매일 아침 최신 브리핑이 업데이트됩니다. 이 페이지를 북마크해두시면 매일 쉽게 접근할 수 있습니다.<br>
+      본 브리핑은 <b>정보 제공 목적</b>으로 작성되며, 투자 판단과 책임은 본인에게 있습니다.
+    </div>
+  </div>
+</div>
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 작성됩니다.<br>
+  금융투자상품에 대한 투자는 원금 손실이 발생할 수 있으며, 투자에 따른 책임은 투자자 본인에게 귀속됩니다.
+</div>
+</body>
+</html>
