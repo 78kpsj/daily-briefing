@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.05.09</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .week-banner { background: linear-gradient(135deg, #1a1a18 0%, #2d2a3e 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1.25rem; }
+  .wb-eyebrow { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#aaa; margin-bottom:.4rem; }
+  .wb-title { font-size:20px; font-weight:700; margin-bottom:.5rem; }
+  .wb-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:.75rem; }
+  .wb-stat { background:rgba(255,255,255,0.08); border-radius:8px; padding:.6rem .8rem; }
+  .wb-stat-label { font-size:10px; color:#aaa; margin-bottom:2px; }
+  .wb-stat-val { font-size:15px; font-weight:700; color:#fff; }
+  .wb-stat-chg { font-size:11px; }
+  .up{color:#6EE7B7;} .dn{color:#FCA5A5;} .neu{color:#aaa;}
+  .focus-box { background:#E1F5EE; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#0F6E56; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#085041; line-height:1.7; }
+  .alert-banner { background:#FCEBEB; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:1.25rem; display:flex; gap:10px; }
+  .ab-text { font-size:13px; color:#7F1D1D; line-height:1.65; }
+  .ab-text b { font-weight:700; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .cup{color:#D85A30;} .cdn{color:#378ADD;} .cneu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-macro{background:#FEF0E7;color:#854F0B;}
+  .t-strike{background:#FFF1F2;color:#9F1239;}
+  .t-week{background:#1a1a18;color:#fff;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .next-week { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .nw-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .nw-row:last-child { border-bottom:none; }
+  .nw-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .nw-items { color:#555; line-height:1.65; }
+  .nw-items b { color:#1a1a18; font-weight:600; }
+  .nw-row.highlight { background:#EEEDFE; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } .wb-stats{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 5월 9일 (토) · 주말 총결산</div>
+</div>
+
+<!-- 주간 결산 배너 -->
+<div class="week-banner">
+  <div class="wb-eyebrow">📅 이번 주 결산 (5/4~5/8) — 역사적 랠리 주간</div>
+  <div class="wb-title">코스피 6,590 → 7,490 · 주간 +13.7%</div>
+  <div class="wb-stats">
+    <div class="wb-stat"><div class="wb-stat-label">코스피 마감</div><div class="wb-stat-val">7,490</div><div class="wb-stat-chg up">주간 +13.7%</div></div>
+    <div class="wb-stat"><div class="wb-stat-label">삼성전자</div><div class="wb-stat-val">27만원</div><div class="wb-stat-chg up">시총 1조달러</div></div>
+    <div class="wb-stat"><div class="wb-stat-label">WTI 유가</div><div class="wb-stat-val">$95</div><div class="wb-stat-chg up">-7% 100달러 아래</div></div>
+  </div>
+</div>
+
+<div class="alert-banner">
+  <div style="font-size:16px">⚠️</div>
+  <div class="ab-text"><b>고용 서프라이즈 — 혼조 신호:</b> 4월 비농업 11.5만명(예상 6.2만 대비 서프라이즈). 그러나 임금상승률 3.6%(예상 3.8% 하회). '고용 강하지만 임금 압력 낮다' → 시장은 중립~소폭 긍정으로 해석. 9월 인하 기대 소폭 후퇴하나 과도한 충격은 없을 전망.</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">다음 주 초점</div>
+  <div class="focus-text">5/12 미국 4월 CPI · 5/15 워시 연준 의장 공식 취임 · 5/20 엔비디아 실적(AI 슈퍼사이클 최종 판가름) · 5/21 삼성전자 총파업 D-Day — 운명의 한 주</div>
+</div>
+
+<div class="sec-label">이번 주 고용보고서 결과 (5/8 현지)</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">비농업 고용</div><div class="mv cup">11.5만명</div><div class="mch cup">▲ 예상 6.2만 대비 서프라이즈</div></div>
+  <div class="mc"><div class="ml">실업률</div><div class="mv cneu">4.3%</div><div class="mch cneu">— 예상 부합</div></div>
+  <div class="mc"><div class="ml">임금상승률</div><div class="mv cdn">3.6%</div><div class="mch cdn">▼ 예상 3.8% 하회</div></div>
+  <div class="mc"><div class="ml">나스닥 반응</div><div class="mv cneu">혼조</div><div class="mch cneu">— 중립 소화</div></div>
+</div>
+
+<div class="sec-label">이번 주 핵심 이슈 총정리</div>
+
+<div class="card">
+  <div class="tag t-week">이번 주 빅픽처</div>
+  <div class="cheadline">5일 연속 최고치 · 코스피 7000→7490 · 삼성전자 시총 1조달러 · 유가 $95</div>
+  <div class="cbody">이번 주는 한국 증시 역사에 기록될 주간이었다. <b>5월 4일(월) 개장 → 5월 7일(수) 7000 돌파 → 5월 7일(목) 7490</b>까지 단 4거래일 만에 900포인트 상승. 외국인·기관 합산 순매수만 10조 원을 돌파했다. 코스피 주간 상승률 +13.7%는 2001년 9·11 테러 이후 반등 이후 최대 주간 상승폭. 배경은 ① 나스닥 3연속 신고가 ② AMD +18% 폭등 ③ 이란 휴전 기조 확인 + 유가 $95 급락 ④ 한은 비둘기 톤 동결이 복합 작용한 결과였다.</div>
+  <div class="csrc">헤럴드경제 / 이투데이 / 파이낸셜뉴스</div>
+</div>
+
+<div class="card">
+  <div class="tag t-macro">고용 해석</div>
+  <div class="cheadline">11.5만명 서프라이즈지만 임금 3.6% 하회 — '골디락스' 신호로 시장 해석</div>
+  <div class="cbody">고용이 예상(6.2만)의 거의 두 배 수준인 11.5만 명 증가로 나왔다. 민간 부문에서 12만 3000개의 일자리가 늘어났지만 연방정부 공무원 수가 8000명 감소하면서 전체 순증 규모는 11만 5000개로 집계됐다. 그런데 임금 상승률은 3.6%로 예상 3.8%를 하회했다. 이는 '고용은 탄탄하지만 임금 인플레 압력은 약하다'는 골디락스 조합이다. 연준 입장에서는 인하 명분이 약해졌지만 인상 명분도 없다. 시장은 이를 '중립~소폭 긍정'으로 해석했다. 9월 인하 확률은 29% → 20%대로 소폭 후퇴 전망.</div>
+  <div class="csrc">헤럴드경제 / 아주경제 / 블루밍비트</div>
+</div>
+
+<div class="card">
+  <div class="tag t-semi">AI 모멘텀</div>
+  <div class="cheadline">이번 주 나스닥 +2.8% · 엔비디아 D-11 — AI 슈퍼사이클 최종 판가름 카운트다운</div>
+  <div class="cbody">이번 주 기준으로 나스닥지수는 약 2.8% 상승했으며, S&P500지수는 1.5% 오를 전망이다. AMD +18%, 필라델피아 반도체지수 +4.48%로 AI 모멘텀이 전 공급망으로 확산됐다. 이제 시선은 5월 20일 엔비디아 실적으로 향한다. 블랙웰 아키텍처 기반 GB200 수요, 데이터센터 매출 가이던스, 중국 수출 제한 영향이 핵심 체크포인트. 예상 상회 시 코스피 8000 논의 현실화, 미달 시 AI 밸류에이션 전반 재조정 트리거.</div>
+  <div class="csrc">뉴스핌 / 헤럴드경제</div>
+</div>
+
+<div class="card">
+  <div class="tag t-strike">D-12 카운트다운</div>
+  <div class="cheadline">삼성전자 파업 D-12 — 노노 갈등 격화, 협상 타결 가능성 낮아져</div>
+  <div class="cbody">삼성전자 복수 노조 간 내홍이 격화되며 단일 교섭 창구를 통한 타결이 더 어려워졌다. 경영진은 전영현·노태문 대표 명의 임직원 메시지를 발송하며 "미래 경쟁력"을 호소했지만 노조 반응은 냉담했다. 삼성전자 주주들은 파업 시 전 노조원 손배소를 예고했다. 이번 주 삼성전자 주가가 +14% 폭등해 시총 1조 달러를 달성했음에도 노조 협상력이 오히려 강해진 아이러니한 상황. SK하이닉스는 삼성전자 파업 현실화 시 HBM 물량 전환 수혜 구조 유지.</div>
+  <div class="csrc">이투데이 / 헤럴드경제</div>
+</div>
+
+<div class="card">
+  <div class="tag t-warn">리스크 점검</div>
+  <div class="cheadline">빚투 36조·미 30년 금리 5%·고용 서프라이즈 — 3가지 과열 신호 동시 점등</div>
+  <div class="cbody">이번 주 랠리가 화려했던 만큼 과열 신호도 동시에 켜졌다. ① 신용거래융자 36조 원 역대 최고 ② 미국 30년 국채금리 5% 돌파 ③ 고용 서프라이즈로 9월 인하 기대 후퇴. 코스피 주간 +13.7%는 단기간 너무 빠른 상승으로 반대매매 리스크를 키웠다. 5연속 최고치 달성 후 나오는 차익실현 매물이 다음 주 초 조정을 만들 수 있다. 다만 이란 휴전 기조 유지 + 엔비디아 실적 기대가 하방을 지지하는 구조는 유효하다.</div>
+  <div class="csrc">서울신문 / 오늘의클릭</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">다음 주 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">월요일(5/11) 개장 — 고용 서프라이즈 소화, 단기 조정 가능성 열어둘 것</div>
+  <div class="i-body">고용 11.5만 명 서프라이즈는 9월 인하 기대를 소폭 후퇴시킨다. 그러나 임금 3.6% 하회로 충격이 제한적이라 코스피 대규모 하락보다는 숨 고르기 수준의 조정이 예상된다. 개장 초 방향을 확인하고, 갭 하락 시 반도체·AI 인프라 분할 매수 기회로 활용 가능. 과도한 신규 매수는 5/12 CPI 결과 확인 후가 안전하다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">5/20 엔비디아 + 5/21 삼성 파업 — 운명의 같은 주</div>
+  <div class="i-body">이 두 이벤트가 같은 주에 겹치는 것은 올해 가장 큰 변동성 이벤트다. <b>최상 시나리오:</b> 엔비디아 어닝 서프라이즈 + 삼성 파업 타결 → 코스피 8000 논의 현실화. <b>최악 시나리오:</b> 엔비디아 실망 + 삼성 파업 확정 → 반도체 섹터 -10~15% 급락 가능. 그 전에 비중 점검을 마무리하고, 레버리지 포지션은 최소화해두는 것이 현명하다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">5/12 CPI — 유가 $95 효과가 물가에 반영되는 첫 확인</div>
+  <div class="i-body">유가가 $95대로 내려온 효과가 4월 CPI에 부분 반영된다. 근원 CPI가 예상보다 낮게 나오면 → 9월 인하 기대 복원 → 코스피·나스닥 추가 상승. 높게 나오면 → 워시 의장 체제에서 연내 인하 없을 가능성 부각 → 성장주 압박. 고용 서프라이즈 이후 CPI가 다음 방향을 결정하는 핵심 지표다.</div>
+</div>
+
+<div class="sec-label">다음 주 핵심 일정</div>
+<div class="next-week">
+  <div class="nw-row"><div class="nw-day">5/11 월</div><div class="nw-items">고용 서프라이즈 소화 · 삼성전자 파업 <b>D-10</b> · 이란 협상 주말 결과</div></div>
+  <div class="nw-row"><div class="nw-day">5/12 화</div><div class="nw-items">미국 <b>4월 CPI</b> 발표 — 유가 하락 물가 반영 첫 확인 · 다음 방향 결정</div></div>
+  <div class="nw-row"><div class="nw-day">5/13 수</div><div class="nw-items">미국 <b>4월 PPI</b> 발표 · 소매판매 지표</div></div>
+  <div class="nw-row"><div class="nw-day">5/15 목</div><div class="nw-items"><b>워시 연준 의장 공식 취임</b> · 새 통화정책 체계 공식 시작</div></div>
+  <div class="nw-row highlight"><div class="nw-day">5/20 수</div><div class="nw-items">🔥 <b>엔비디아 실적</b> — AI 슈퍼사이클 최종 판가름 이벤트</div></div>
+  <div class="nw-row highlight"><div class="nw-day">5/21 목</div><div class="nw-items">⚡ 삼성전자 <b>총파업 D-Day</b> — 엔비디아와 같은 주, 최대 변동성 구간</div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
