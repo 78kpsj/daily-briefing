@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.05.13</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .alert-banner { border-radius:14px; padding:1rem 1.3rem; margin-bottom:1.25rem; display:flex; gap:10px; }
+  .ab-green { background:#E1F5EE; border:1px solid #A7F3D0; }
+  .ab-red { background:#FCEBEB; border:1px solid #FCA5A5; }
+  .ab-text-g { font-size:13px; color:#065F46; line-height:1.65; }
+  .ab-text-r { font-size:13px; color:#7F1D1D; line-height:1.65; }
+  .ab-text-g b, .ab-text-r b { font-weight:700; }
+  .focus-box { background:#E1F5EE; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#0F6E56; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#085041; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-macro{background:#FEF0E7;color:#854F0B;}
+  .t-strike{background:#FFF1F2;color:#9F1239;}
+  .t-msci{background:#F5F3FF;color:#6D28D9;}
+  .t-china{background:#F0FDF4;color:#14532D;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .week-sched { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .ws-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .ws-row:last-child { border-bottom:none; }
+  .ws-row.hl { background:#FFF8E6; }
+  .ws-row.hl2 { background:#EEEDFE; }
+  .ws-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .ws-items { color:#555; line-height:1.65; }
+  .ws-items b { color:#1a1a18; font-weight:600; }
+  .cpi-result { background:#f8f7f4; border-radius:10px; padding:.85rem 1rem; margin-bottom:10px; }
+  .cpi-row { display:flex; justify-content:space-between; align-items:center; padding:5px 0; border-bottom:1px solid #eeece5; font-size:13px; }
+  .cpi-row:last-child { border-bottom:none; }
+  .cpi-label { color:#555; }
+  .cpi-val { font-weight:700; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 5월 13일 (수)</div>
+</div>
+
+<!-- CPI 결과 배너 -->
+<div class="alert-banner ab-green">
+  <div style="font-size:16px">✅</div>
+  <div class="ab-text-g"><b>어젯밤 CPI 예상 부합 — 근원 2.7% 유지:</b> 4월 헤드라인 CPI 3.7%(예상 3.7% 부합), 근원 CPI 2.7%(예상 2.7% 부합). 유가 상승이 근원물가로 전이되지 않았음을 확인. 시장은 '예상 수준'으로 소화, 나스닥 선물 소폭 상승 반응.</div>
+</div>
+
+<div class="alert-banner ab-red" style="margin-top:-0.5rem">
+  <div style="font-size:16px">⚠️</div>
+  <div class="ab-text-r"><b>트럼프 "이란 생명유지 장치" 발언 — 유가 $103 유지:</b> 협상이 사실상 결렬 수순. 미중 정상회담(14~15일)이 이란 종전의 마지막 실질적 기회로 부상.</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">오늘의 초점</div>
+  <div class="focus-text">오늘 새벽 MSCI 한국 5월 정기 리뷰 발표(레인보우로보틱스 편입 70% · 한진칼 편출 유력) · 오늘 밤 PPI 발표(예상 4.9%) · 시스코 실적 · 미중 정상회담 내일(14일) · 삼성전자 파업 D-8</div>
+</div>
+
+<!-- CPI 결과표 -->
+<div class="sec-label">어젯밤 CPI 결과 (4월, 전년비)</div>
+<div class="cpi-result">
+  <div class="cpi-row"><span class="cpi-label">헤드라인 CPI</span><span class="cpi-val neu">3.7% (예상 3.7% 부합)</span></div>
+  <div class="cpi-row"><span class="cpi-label">근원 CPI (식품·에너지 제외)</span><span class="cpi-val up">2.7% (예상 2.7% 부합)</span></div>
+  <div class="cpi-row"><span class="cpi-label">전월비 헤드라인</span><span class="cpi-val neu">+0.6% (예상 0.6% 부합)</span></div>
+  <div class="cpi-row"><span class="cpi-label">유가 → 근원물가 전이</span><span class="cpi-val up">가시화되지 않음 ✅</span></div>
+  <div class="cpi-row"><span class="cpi-label">시장 반응</span><span class="cpi-val up">나스닥 선물 소폭 상승 · 달러 약보합</span></div>
+</div>
+
+<div class="sec-label">주요 지표</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">코스피(전일)</div><div class="mv">7,100대</div><div class="mch dn">▼ 조정 지속</div></div>
+  <div class="mc"><div class="ml">브렌트유</div><div class="mv dn">$103</div><div class="mch dn">▼ 협상 교착</div></div>
+  <div class="mc"><div class="ml">달러/원</div><div class="mv">1,465</div><div class="mch neu">— CPI 후 소폭 강세</div></div>
+  <div class="mc"><div class="ml">나스닥 선물</div><div class="mv up">소폭↑</div><div class="mch up">▲ CPI 부합 안도</div></div>
+</div>
+
+<div class="sec-label">오늘의 핵심 이슈</div>
+
+<div class="card">
+  <div class="tag t-pos">✅ CPI 해석</div>
+  <div class="cheadline">유가 3월 이후 추가 상승에도 근원 CPI 2.7% 유지 — '유가 전이 없다' 확인</div>
+  <div class="cbody">가장 중요한 신호는 근원 CPI(2.7%)가 예상치를 벗어나지 않았다는 점이다. 국제유가가 100달러를 웃도는 상황에서도 서비스물가·주거비 등 근원 인플레이션으로 전이가 일어나지 않고 있음을 확인했다. TradingKey 분석에 따르면 유가의 근원 인플레이션 전이는 아직 가시화되지 않았다는 평가가 이번 CPI로 확인됐다. 이는 워시 연준 의장이 데이터를 보며 유연하게 대응할 여지를 남겨두는 조건이 아직 살아있다는 의미다. 다만 Bank of America는 여전히 2026년 내 금리 인하가 없을 것으로 전망하고 있어 낙관론에도 한계가 있다.</div>
+  <div class="csrc">TradingKey / 뉴스핌 / BLS</div>
+</div>
+
+<div class="card">
+  <div class="tag t-msci">🔔 오늘 새벽 발표</div>
+  <div class="cheadline">MSCI 한국 5월 정기 리뷰 — 레인보우로보틱스 편입(70%)·한진칼 편출 유력</div>
+  <div class="cbody">하나증권은 MSCI 한국 지수에 레인보우로보틱스(편입 확률 70%)와 키움증권(30%)이 편입되고 한진칼은 편출될 가능성이 높다고 분석했다. 실제 리밸런싱은 5월 29일 장 마감 후 진행된다. 주의사항: '소문에 사고 뉴스에 팔기' 패턴이 MSCI 편입 종목에서 자주 나타난다. 전문가들은 "발표 당일의 급등을 기대하기보다는 실제 패시브 자금이 유입되는 월말까지의 수급 강도와 변동성을 분할 대응하는 전략이 필요하다"고 조언한다. 레인보우로보틱스는 이미 한 달 새 47% 급등했음을 감안해야 한다.</div>
+  <div class="csrc">하나증권 / 뉴스핌 / 더페어</div>
+</div>
+
+<div class="card">
+  <div class="tag t-china">내일 최대 이벤트</div>
+  <div class="cheadline">미중 정상회담(14~15일) — 이란 종전 중재 + 반도체 규제가 핵심</div>
+  <div class="cbody">투자자들은 미중 정상회담 전에 미국과 이란이 종전 협상에서 큰 진전을 이루거나 호르무즈 해협이 다시 개방되기를 기대하고 있다. 트럼프는 정상회담 전 이란 협상 성과를 원하고, 중국은 중재자 역할로 국제 위상을 높일 유인이 있다. 반도체 수출 규제 완화 논의가 포함되면 삼성전자·SK하이닉스의 중국 시장 접근성 개선 기대도 살아난다. 회담 결과가 오늘 밤 CPI 이후 이번 주 최대 변수다.</div>
+  <div class="csrc">머니투데이</div>
+</div>
+
+<div class="card">
+  <div class="tag t-macro">오늘 밤 이벤트</div>
+  <div class="cheadline">4월 PPI 발표 (오늘 밤 9시 30분) — 예상 헤드라인 4.9%·근원 4.3%</div>
+  <div class="cbody">PPI는 헤드라인 기준 전월 대비 0.5%, 전년 대비 4.9% 상승이 예상되며, 근원 PPI는 전월 대비 0.3%, 전년 대비 4.3% 상승할 것으로 전망된다. PPI는 기업 생산 단계의 물가로, 향후 CPI에 선행하는 지표다. PPI가 예상보다 낮게 나오면 향후 CPI 추가 하락 기대 → 금리 인하 기대 추가 복원 가능. 오늘 밤 시스코 실적 발표도 AI 네트워킹·데이터센터 인프라 수요를 점검하는 지표가 된다.</div>
+  <div class="csrc">뉴스핌</div>
+</div>
+
+<div class="card">
+  <div class="tag t-semi">국내 증시</div>
+  <div class="cheadline">CPI 부합 + MSCI 리뷰 + 미중 회담 기대 — 코스피 반등 재료 겹쳐</div>
+  <div class="cbody">이번 주 국내 증시는 미국 물가 지표와 미중 정상회담, MSCI 5월 정기 리뷰, 파월 의장 임기 종료 이슈까지 대형 이벤트가 한꺼번에 몰리며 중대 분수령을 맞고 있다. CPI 예상 부합으로 첫 번째 관문을 넘었고, 오늘 MSCI 리뷰 결과와 내일 미중 정상회담이 연달아 나온다. 증권가는 반도체 중심 전략 유지 속 실적주 순환매를 권고하고 있으며, 코스피 선행 PER 7.66배는 여전히 밸류에이션 정상화 여지가 있다고 평가한다.</div>
+  <div class="csrc">뉴스핌 / 대신증권 / 유안타증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-strike">파업 D-8</div>
+  <div class="cheadline">삼성전자 파업 D-8 — 협상 교착 속 노사 양측 강경 기조</div>
+  <div class="cbody">총파업까지 8일 남았다. 노사 모두 강경 기조를 유지 중이다. CPI 부합으로 반도체 시장 전반의 불확실성이 다소 완화됐지만, 파업 리스크는 여전하다. SK하이닉스 ADR 상장 추진 소식이 전해지며 글로벌 투자자 접근성 확대 기대가 부각됐다. 삼성 파업 현실화 시 HBM4 공급 차질 → SK하이닉스 물량 전환 수혜 구조는 변함없다.</div>
+  <div class="csrc">헤럴드경제 / 메리츠증권</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">오늘 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">CPI 고비 넘었다 — 미중 회담 앞두고 신중한 반등 접근</div>
+  <div class="i-body">CPI 예상 부합으로 최대 공포 요인(유가 근원 전이)이 기각됐다. 이는 이번 주 조정의 빌미가 해소된 것이므로, 오늘 코스피는 소폭 반등 출발이 예상된다. 그러나 유가 $103 유지와 이란 협상 교착은 여전히 부담이다. 적극적 매수보다는 내일(14일) 미중 정상회담 결과를 확인한 후 비중을 조정하는 접근이 안전하다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">MSCI 편입 종목 — '발표 당일 매수'는 위험</div>
+  <div class="i-body">레인보우로보틱스는 이미 한 달 새 47% 급등하며 스마트 머니가 선반영했다. 역사적으로 MSCI 편입 확정 발표 당일 '셀 온 뉴스' 현상이 자주 나타났다. 진짜 패시브 자금이 유입되는 5월 29일 리밸런싱까지의 수급 강도를 확인하며 분할 접근하는 것이 유리하다. 한진칼 편출 확정 시 수급 충격(950억 매도) 경계도 필요하다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">이번 주 남은 핵심 — 14~15일 미중 정상회담이 분수령</div>
+  <div class="i-body">CPI ✅ → PPI(오늘 밤) → 미중 정상회담(내일~15일) → 워시 연준 의장 공식 취임(15일) 순으로 이벤트가 이어진다. 미중 회담에서 이란 종전 중재 신호가 나오면 유가 하락 → 증시 반등 시나리오가 가능하다. 반도체·전력·방산 핵심 포지션을 유지하면서 순환매 기회를 노리는 전략이 유효하다. 5/20 엔비디아까지 남은 시간을 활용해 비중을 점진적으로 정상화하는 것을 권한다.</div>
+</div>
+
+<div class="sec-label">이번 주 남은 일정</div>
+<div class="week-sched">
+  <div class="ws-row"><div class="ws-day">5/13 수</div><div class="ws-items">MSCI 한국 리뷰 결과 소화 · <b>PPI 발표</b>(밤 9시 30분) · 시스코 실적 · 삼성 파업 D-8</div></div>
+  <div class="ws-row hl"><div class="ws-day">5/14~15 목금</div><div class="ws-items">🌏 <b>미중 정상회담</b> — 이란 종전 중재·반도체 규제 완화·무역 3중 의제</div></div>
+  <div class="ws-row"><div class="ws-day">5/14 목</div><div class="ws-items">어플라이드 머티리얼스 실적 · <b>파월 연준 의장 임기 종료</b></div></div>
+  <div class="ws-row"><div class="ws-day">5/15 금</div><div class="ws-items"><b>워시 연준 의장 공식 취임</b> · 새 통화정책 체계 시작</div></div>
+  <div class="ws-row hl2"><div class="ws-day">5/20 수</div><div class="ws-items">🔥 <b>엔비디아 실적</b> — AI 슈퍼사이클 최종 판가름</div></div>
+  <div class="ws-row hl2"><div class="ws-day">5/21 목</div><div class="ws-items">⚡ 삼성전자 <b>총파업 D-Day</b></div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
