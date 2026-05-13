@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.05.14</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .main-banner { background: linear-gradient(135deg, #0F3460 0%, #16213E 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1.25rem; }
+  .mb-eyebrow { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#93C5FD; margin-bottom:.4rem; }
+  .mb-title { font-size:18px; font-weight:700; margin-bottom:.5rem; line-height:1.4; }
+  .mb-sub { font-size:13px; color:#CBD5E1; line-height:1.65; }
+  .alert-green { background:#E1F5EE; border:1px solid #A7F3D0; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1rem; display:flex; gap:10px; }
+  .ag-text { font-size:13px; color:#065F46; line-height:1.65; }
+  .ag-text b { font-weight:700; }
+  .focus-box { background:#FFF8E6; border:1px solid #FDE68A; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#92400E; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#78350F; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-macro{background:#FEF0E7;color:#854F0B;}
+  .t-strike{background:#FFF1F2;color:#9F1239;}
+  .t-china{background:#EFF6FF;color:#1D4ED8;}
+  .t-iran{background:#FEF3C7;color:#92400E;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .week-sched { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .ws-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .ws-row:last-child { border-bottom:none; }
+  .ws-row.hl { background:#EFF6FF; }
+  .ws-row.hl2 { background:#EEEDFE; }
+  .ws-row.hl3 { background:#FEF3C7; }
+  .ws-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .ws-items { color:#555; line-height:1.65; }
+  .ws-items b { color:#1a1a18; font-weight:600; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 5월 14일 (목)</div>
+</div>
+
+<div class="main-banner">
+  <div class="mb-eyebrow">🌏 지금 진행 중 — 한국시간 오전 11시 15분 개막</div>
+  <div class="mb-title">미중 정상회담 베이징 개막 — 9년 만의 트럼프 방중</div>
+  <div class="mb-sub">트럼프·시진핑 오늘·내일 이틀간 6차례 만남. 이란 종전 중재 + 관세 휴전 연장 + 반도체 수출 규제 + 희토류 3중 의제. 어제 이란 협상에 진전 있었다는 악시오스 보도 — 5/21 전 기본합의 도달 시도 중.</div>
+</div>
+
+<div class="alert-green">
+  <div style="font-size:16px">✅</div>
+  <div class="ag-text"><b>어젯밤 PPI도 예상 부합:</b> 4월 PPI 헤드라인 전년비 4.9%(예상 4.9% 부합), 근원 PPI 4.3%(예상 4.3% 부합). CPI에 이어 PPI도 예상을 벗어나지 않았다 — 인플레 2차 전이 우려 진정. 시스코 실적도 어닝 서프라이즈로 AI 네트워킹 수요 확대 확인.</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">🔥 오늘 핵심 초점</div>
+  <div class="focus-text">미중 정상회담 결과 실시간 모니터링 · 이란 종전 협상 진전 여부 · 오늘 밤 어플라이드 머티리얼스 실적 + 소매판매 + 수입물가 · 파월 연준 의장 임기 종료 (오늘) · 삼성전자 파업 D-7</div>
+</div>
+
+<div class="sec-label">주요 지표</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">코스피</div><div class="mv up">7,250↑</div><div class="mch up">▲ PPI 부합 + 미중 기대</div></div>
+  <div class="mc"><div class="ml">브렌트유</div><div class="mv dn">$101</div><div class="mch dn">▼ 이란 진전 기대</div></div>
+  <div class="mc"><div class="ml">달러/원</div><div class="mv up">1,460</div><div class="mch up">▲ 원화 강세</div></div>
+  <div class="mc"><div class="ml">나스닥</div><div class="mv up">25,300↑</div><div class="mch up">▲ 물가 안도 + AI 랠리</div></div>
+</div>
+
+<div class="sec-label">오늘의 핵심 이슈</div>
+
+<div class="card">
+  <div class="tag t-china">🔥 지금 진행 중</div>
+  <div class="cheadline">미중 정상회담 — 트럼프 13~15일 방중, 이란 중재 + 관세 3중 의제</div>
+  <div class="cbody">트럼프 대통령이 9년 만에 중국을 방문해 시진핑 주석과 오늘·내일 6차례 대면한다. 핵심 의제는 ① 이란 종전 중재 (중국이 이란 핵개발 포기 설득) ② 지난해 부산 합의(관세 휴전·희토류 유예) 1년 연장 여부 ③ AI 반도체 수출 규제·희토류 ④ 항공·농업·에너지 분야 추가 협정. 트럼프 동행단에는 팀 쿡(애플), 켈리 오트버그(보잉) 등 CEO들이 동행해 실질적 거래 합의를 예고했다. 단, 엔비디아 젠슨 황은 AI 칩 수출 갈등으로 동행 명단에서 빠진 것이 주목된다.</div>
+  <div class="csrc">뉴시스 / 파이낸셜뉴스 / 전자신문 / 서울경제</div>
+</div>
+
+<div class="card">
+  <div class="tag t-iran">이란 종전 진전</div>
+  <div class="cheadline">악시오스 "14일 이란 협상 진전 — 5/21 전 기본합의 목표, 휴전 연장 시도"</div>
+  <div class="cbody">미국 정치 매체 악시오스가 미국 정부 관계자 2명을 인용해 14일 미·이란 협상에 진전이 있었다고 보도했다. 파키스탄·이집트·튀르키예 중재로 5월 21일 휴전 만료 전에 기본합의 도달을 시도 중. 기본합의 성사 시 포괄적 합의의 세부사항 협상을 위한 휴전 연장이 필요하다고 미국 관리는 설명했다. 밴스 부통령은 "합의하고 싶어 하는 느낌이 좋다"며 낙관. 단, 아직 견해차가 크다는 경계도 여전하다. 기본합의가 실현되면 호르무즈 해협 재개방 → 유가 $80대 급락 → PCE 2%대 → 9월 인하 기대 폭발 시나리오가 현실화된다.</div>
+  <div class="csrc">연합뉴스 / 악시오스</div>
+</div>
+
+<div class="card">
+  <div class="tag t-pos">물가 연속 안도</div>
+  <div class="cheadline">PPI도 예상 부합 + 시스코 어닝 서프라이즈 — AI 네트워킹 수요 구조적 확대</div>
+  <div class="cbody">4월 PPI 헤드라인 4.9%(예상 4.9% 부합), 근원 4.3%(예상 4.3% 부합). CPI-PPI 연속 예상 부합으로 '유가발 2차 인플레 전이' 공포가 사실상 해소됐다. 시스코 실적은 어닝 서프라이즈로 AI 데이터센터 네트워킹·보안 수요 폭증을 확인했다. 시스코 수혜는 국내 케이블·네트워크 장비 공급사(유니드·옵티시스)에 긍정적이다. 우버와 디즈니도 이번 주 실적에서 소비가 탄탄하게 유지되고 있음을 확인했다.</div>
+  <div class="csrc">머니투데이 / 뉴스핌</div>
+</div>
+
+<div class="card">
+  <div class="tag t-semi">오늘 밤 실적</div>
+  <div class="cheadline">어플라이드 머티리얼스 실적 (오늘 밤) — 반도체 장비 수요 + 국내 소부장 방향</div>
+  <div class="cbody">오늘 밤 어플라이드 머티리얼스(AMAT)가 실적을 발표한다. 삼성전자·SK하이닉스 장비 주요 공급사로 국내 반도체 소부장 섹터와 직결된다. HBM4·2nm 파운드리 장비 수주 현황과 중국 수출 제한에 따른 매출 타격 규모가 핵심. 예상 상회 시 내일 국내 반도체 장비주(원익IPS·이오테크닉스·피에스케이) 강세 기대. 소매판매(예상 +0.4%)와 수입물가도 오늘 발표 — 소비 동향과 인플레 추가 확인.</div>
+  <div class="csrc">머니투데이</div>
+</div>
+
+<div class="card">
+  <div class="tag t-macro">역사적 순간</div>
+  <div class="cheadline">파월 연준 의장 오늘 임기 종료 — 워시 체제 내일 공식 출범</div>
+  <div class="cbody">제롬 파월 연준 의장이 오늘 임기가 끝나고, 케빈 워시가 내일(15일) 공식 취임한다. 워시는 파월보다 인플레이션에 강경하다는 평가를 받지만, 트럼프의 금리 인하 압력에는 파월보다 유연할 것이라는 분석도 있다. 첫 공식 FOMC는 6월 16~17일. 이란 종전이 성사되면 유가 하락 → PCE 개선 → 워시의 첫 FOMC에서 인하 신호 가능성이 열린다. 새 체제 하의 첫 발언에 시장이 예민하게 반응할 전망.</div>
+  <div class="csrc">대신증권 리포트 / 뉴스핌</div>
+</div>
+
+<div class="card">
+  <div class="tag t-strike">파업 D-7</div>
+  <div class="cheadline">삼성전자 파업 D-7 — 이번 주가 타결 마지막 기회</div>
+  <div class="cbody">총파업까지 7일. 미중 정상회담에서 반도체 수출 규제 완화가 논의되면 삼성전자 주가에는 호재지만, 파업 협상은 여전히 교착이다. 오늘·내일이 협상 타결의 사실상 마지막 기회다. 5/20 엔비디아 실적과 5/21 삼성 파업이 같은 주에 겹치는 구조는 변함없다. 파업 현실화 시 SK하이닉스 ADR 상장 추진(글로벌 투자자 접근성 확대) 소식과 맞물려 SK하이닉스와 삼성전자 간 주가 격차가 더 벌어질 가능성이 높다.</div>
+  <div class="csrc">헤럴드경제 / 메리츠증권</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">오늘 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">미중 정상회담 결과를 실시간으로 — 이란 종전이 핵심</div>
+  <div class="i-body">CPI·PPI 연속 예상 부합으로 인플레 공포가 해소됐고, 미중 정상회담이 진행 중이다. 이란 기본합의 신호가 오늘·내일 나오면 유가 급락 → 코스피 추가 상승이 가능하다. 반대로 회담이 빈손으로 끝나거나 관세 연장만 이루어지면 시장의 기대가 실망으로 변할 수 있다. 회담 결과를 확인하기 전까지 급하게 포지션을 늘리기보다, 결과 발표 후 방향에 따라 대응하는 전략이 안전하다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">이란 종전 시나리오별 대응</div>
+  <div class="i-body"><b>기본합의 성사 시:</b> 유가 $80대 급락 예상 → 에너지·정유 비중 축소, 소비재·항공·전기차 비중 확대, 코스피 7500 재탈환 후 엔비디아(5/20) 향한 랠리 재개. <b>관세 휴전 연장만 시:</b> 제한적 호재, 코스피 7200~7400 횡보 지속. <b>회담 결렬 시:</b> 이란 긴장 재고조, 유가 $110 위협, 코스피 7000선 재시험 가능. 세 시나리오 중 기본합의 성사가 증시에 가장 폭발적인 영향을 준다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">5/20+5/21 전 마지막 비중 점검 시한</div>
+  <div class="i-body">엔비디아 실적(5/20)과 삼성전자 파업(5/21)까지 7일. 이번 주 안에 반도체 포지션 비중을 점검하고, 과중한 경우 일부 정리해두는 것이 리스크 관리의 마지막 창문이다. 미중 정상회담 결과를 보고 오늘·내일 중 최종 포트폴리오 조정을 마무리하는 것을 권한다.</div>
+</div>
+
+<div class="sec-label">이번 주 남은 일정</div>
+<div class="week-sched">
+  <div class="ws-row hl3"><div class="ws-day">5/14 목</div><div class="ws-items">🌏 <b>미중 정상회담</b>(오전 11시 15분) · 파월 의장 임기 종료 · <b>어플라이드 머티리얼스 실적</b>(밤) · 소매판매·수입물가</div></div>
+  <div class="ws-row hl3"><div class="ws-day">5/15 금</div><div class="ws-items">🌏 미중 정상회담 2일차 · <b>워시 연준 의장 공식 취임</b> · 미중 합의 발표 주목</div></div>
+  <div class="ws-row"><div class="ws-day">5/16~19</div><div class="ws-items">이란 종전 협상 진전 여부 모니터링 · 삼성전자 노사 협상 마지막 기회</div></div>
+  <div class="ws-row hl2"><div class="ws-day">5/20 수</div><div class="ws-items">🔥 <b>엔비디아 실적</b> — AI 슈퍼사이클 최종 판가름</div></div>
+  <div class="ws-row hl2"><div class="ws-day">5/21 목</div><div class="ws-items">⚡ 삼성전자 <b>총파업 D-Day</b> — 최대 변동성</div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
