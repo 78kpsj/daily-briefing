@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.05.17</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .main-banner { background: linear-gradient(135deg, #1a1a18 0%, #1e3a5f 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1rem; }
+  .mb-eye { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#93C5FD; margin-bottom:.4rem; }
+  .mb-title { font-size:20px; font-weight:700; margin-bottom:.4rem; }
+  .mb-sub { font-size:13px; color:#BFDBFE; line-height:1.65; }
+  .warn-banner { background:#FFF8E6; border:1px solid #FDE68A; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:1rem; display:flex; gap:10px; }
+  .wb-text { font-size:13px; color:#78350F; line-height:1.65; }
+  .wb-text b { font-weight:700; }
+  .focus-box { background:#FCEBEB; border:1px solid #FCA5A5; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#9F1239; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#7F1D1D; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-strike{background:#FFF1F2;color:#9F1239;}
+  .t-nvidia{background:#1a1a18;color:#6EE7B7;}
+  .t-iran{background:#FEF3C7;color:#92400E;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .countdown { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:1.5rem; }
+  .cd-box { background:#fff; border:1px solid #e8e6de; border-radius:10px; padding:.75rem; text-align:center; }
+  .cd-num { font-size:28px; font-weight:700; }
+  .cd-label { font-size:11px; color:#888; margin-top:2px; }
+  .cd-red { color:#D85A30; }
+  .cd-purple { color:#534AB7; }
+  .cd-green { color:#3B6D11; }
+  .next-week { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .nw-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .nw-row:last-child { border-bottom:none; }
+  .nw-row.hl { background:#DCFCE7; }
+  .nw-row.hl2 { background:#EEEDFE; }
+  .nw-row.hlr { background:#FCEBEB; }
+  .nw-row.hly { background:#FFF8E6; }
+  .nw-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .nw-items { color:#555; line-height:1.65; }
+  .nw-items b { color:#1a1a18; font-weight:600; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } .countdown{ grid-template-columns:repeat(3,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 5월 17일 (일) · 개장 전날판</div>
+</div>
+
+<div class="main-banner">
+  <div class="mb-eye">🔔 내일(5/18 월) 개장 전날</div>
+  <div class="mb-title">이번 주 운명의 72시간 — 엔비디아·파업·이란 동시 폭발</div>
+  <div class="mb-sub">5/20 엔비디아 실적 · 5/21 삼성 파업 D-Day + 이란 휴전 만료 · 노동부 장관 "파업 시 긴급조정권 불가피" · 이란 협상 산발적 교전 속 진행 중</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">🚨 이번 주 최고 위험 구간</div>
+  <div class="focus-text">5/20(화) 엔비디아 실적 발표 + 5/21(수) 삼성전자 총파업 D-Day + 이란 휴전 만료 동시 발생. 세 이벤트 결과에 따라 코스피 8000 안착 또는 반도체 섹터 -10% 급락 갈린다. 긴급조정권 주말 발동 여부가 월요일 개장 방향 결정.</div>
+</div>
+
+<div class="warn-banner">
+  <div style="font-size:16px">⚠️</div>
+  <div class="wb-text"><b>이란 산발적 교전 재개 — 유가 반등 주의:</b> 미·이란이 종전 협상 중이지만 주말 사이 호르무즈 해협에서 소규모 교전이 재개됐다는 보도가 있습니다. 유가가 다시 $95 이상으로 반등할 경우 월요일 코스피 하락 압력 요인이 됩니다.</div>
+</div>
+
+<div class="sec-label">카운트다운</div>
+<div class="countdown">
+  <div class="cd-box"><div class="cd-num cd-purple">3</div><div class="cd-label">엔비디아 실적까지</div></div>
+  <div class="cd-box"><div class="cd-num cd-red">4</div><div class="cd-label">삼성 파업 D-Day</div></div>
+  <div class="cd-box"><div class="cd-num cd-green">4</div><div class="cd-label">이란 휴전 만료</div></div>
+</div>
+
+<div class="sec-label">주요 지표 (5/15 마감 기준)</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">코스피</div><div class="mv up">7,981</div><div class="mch up">▲ 8000 문턱</div></div>
+  <div class="mc"><div class="ml">브렌트유</div><div class="mv dn">$91~95</div><div class="mch neu">— 교전 재개 변동</div></div>
+  <div class="mc"><div class="ml">나스닥</div><div class="mv up">25,700↑</div><div class="mch up">▲ 사상 최고 유지</div></div>
+  <div class="mc"><div class="ml">달러/원</div><div class="mv up">1,445</div><div class="mch up">▲ 원화 강세</div></div>
+</div>
+
+<div class="sec-label">오늘의 핵심 이슈</div>
+
+<div class="card">
+  <div class="tag t-strike">🚨 파업 D-4</div>
+  <div class="cheadline">노동부 장관 "파업 시 긴급조정권 불가피" — 주말 발동 여부가 월요일 개장 방향</div>
+  <div class="cbody">김영훈 고용노동부 장관이 5월 14일 공식 발언을 통해 "총파업에 돌입할 경우 긴급조정권 발동이 불가피하다"고 밝혔다. 이는 사실상 파업 강행 시 즉각 발동하겠다는 예고다. 긴급조정권 발동 시 30일간 파업 중단 → 삼성전자 월요일 급등 시나리오. 발동 없이 파업 예고 유지 시 불확실성 지속 → 시장 변동성 확대. 재계는 파업 시 100조원 피해를 주장하고 있어 정부 결단 압박이 극에 달하고 있다. 오늘~내일 사이 발동 공식 발표 여부가 주목된다.</div>
+  <div class="csrc">나무위키 / MBC뉴스 / 머니투데이</div>
+</div>
+
+<div class="card">
+  <div class="tag t-nvidia">🔥 D-3</div>
+  <div class="cheadline">엔비디아 실적 D-3 (5/20) — 컨센 매출 430억달러·H200 중국 가이던스가 핵심</div>
+  <div class="cbody">엔비디아 실적까지 3일. 컨센서스 매출 430억 달러(전년比 +65%), EPS 0.95달러. 미중 정상회담에서 알리바바·텐센트 등 중국 빅테크 10개사에 H200 수출 승인 임박 보도까지 더해져 기대치가 최고조다. 체크포인트: ① 블랙웰 GB300 수요 가이던스 ② 중국 판매 공식 확인 여부 ③ 데이터센터 CAPEX 지속 확인. 기대치가 과도하게 높은 만큼 '소문에 사고 뉴스에 팔기' 패턴 리스크를 항상 염두에 두어야 한다. 엔비디아 실적 발표 전날(5/19)까지 AI 반도체 섹터는 모멘텀을 유지할 가능성이 높다.</div>
+  <div class="csrc">뉴스핌 / 키움증권 / Investing.com</div>
+</div>
+
+<div class="card">
+  <div class="tag t-iran">이란 D-4</div>
+  <div class="cheadline">이란 휴전 만료 D-4 — 산발적 교전 속 협상 계속, 기본합의 성사 여부가 유가 방향</div>
+  <div class="cbody">5월 21일 이란 휴전 만료까지 4일. 미·이란이 기본합의 도달을 목표로 협상 중이지만 주말 사이 호르무즈 해협에서 산발적 교전이 재개됐다는 보도가 나왔다. 이란은 협상 카드로 호르무즈 봉쇄를 유지하려 하고 있다. 기본합의 성사 시 호르무즈 재개방 → 유가 $85 급락 → 9월 금리 인하 기대 폭발. 협상 결렬·교전 재개 시 유가 $100 재진입 → 코스피 하락 압력. 이란 결과는 5/21 삼성전자 파업과 동시에 터지는 '이중 폭발' 구조다.</div>
+  <div class="csrc">Investing.com / 삼성금거래소 시황</div>
+</div>
+
+<div class="card">
+  <div class="tag t-pos">월요일 호재</div>
+  <div class="cheadline">코스피 8000 돌파 시도 — 키움증권 전망 + 미중 합의 + H200 승인 기대 3중 모멘텀</div>
+  <div class="cbody">키움증권은 코스피의 8000선 돌파를 전망했다. 미중 정상회담의 양호한 결과 소화 + 어플라이드 머티리얼스 어닝 서프라이즈 + 엔비디아 H200 중국 판매 승인 기대가 겹쳐 있다. 다만 5월 들어 외국인이 20.2조원을 순매도한 상태이고 이란 교전 재개 우려도 있어 갭 상승 이후 차익실현 매물이 쏟아질 수 있다. 개장 초 방향과 매수 강도를 확인한 후 포지션을 조정하는 것이 안전하다.</div>
+  <div class="csrc">뉴스핌 / 키움증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-semi">메모리 슈퍼사이클</div>
+  <div class="cheadline">"파업 = 공급 쇼크 = 메모리 가격 급등" — 역설적 상승 구조 지속</div>
+  <div class="cbody">삼성전자 파업이 오히려 메모리 전체 섹터 주가를 밀어 올리는 역설적 구조가 지속되고 있다. HBM 공급 가능 업체가 삼성·SK하이닉스·마이크론 3사뿐인 구조에서 삼성 공급 차질 시 가격 급등 → 나머지 2사 수혜. 마이크론 5월 +44%, SK하이닉스 목표가 추가 상향이 이 구조를 반영한다. 단, 파업이 현실화되면 삼성전자 주가는 단기 급락 가능하므로 삼성전자와 SK하이닉스를 분리해 접근해야 한다.</div>
+  <div class="csrc">뉴스스페이스 / 뉴스1 / Investing.com</div>
+</div>
+
+<div class="card">
+  <div class="tag t-hot">이번 주 전략</div>
+  <div class="cheadline">월초 반도체 급등→중반 순환매 패턴 — 5월 후반 추가 레벨업 준비 구간</div>
+  <div class="cbody">대신증권 분석에 따르면 매달 월초 반도체 급등 이후 단기 박스권 → 월 후반 추가 상승하는 패턴이 반복되고 있다. 5월도 동일 패턴으로 이번 주 엔비디아·파업 이벤트 소화 후 월 후반(5/22 이후) 추가 상승 준비 구간에 진입할 수 있다. 순환매 방향은 방산·전력·바이오·금융으로의 확산이 예상된다. 코스피 선행 PER 8배 미만으로 여전히 저평가 구간이라는 평가도 유효하다.</div>
+  <div class="csrc">대신증권 리포트 / 뉴스핌</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">이번 주 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">5/18(월) — 긴급조정권 결과 + 8000 돌파 시도 확인</div>
+  <div class="i-body">월요일 개장 전 긴급조정권 발동 여부를 먼저 확인한다. 발동 시 삼성전자 급등 → 코스피 8000 돌파 가능. 미발동 시 파업 불확실성 지속 → 변동성 확대. 어느 쪽이든 개장 초 30분 방향을 확인하고 움직이는 것이 원칙이다. 이란 교전 재개 뉴스가 있다면 유가 방향도 함께 체크.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">5/19(화) 엔비디아 실적 전날 — 포지션 최종 확정</div>
+  <div class="i-body">엔비디아 실적(5/20 장 마감 후) 전날까지가 AI 반도체 모멘텀이 가장 강한 구간이다. 5/19까지 반도체 포지션 비중을 최종 결정하고, 엔비디아 실적 발표 후 '소문에 팔기' 패턴에 대비해 일부 차익실현을 준비해 두는 것이 현명하다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">5/21 이중 D-Day — 최악·최상 시나리오 모두 준비</div>
+  <div class="i-body"><b>최상:</b> 엔비디아 서프라이즈 + 긴급조정권으로 파업 저지 + 이란 기본합의 → 코스피 8000 안착·8500 논의. <b>최악:</b> 엔비디아 미달 + 삼성 파업 현실화 + 이란 협상 결렬 → 반도체 섹터 -10~15%, 유가 $100 재진입. <b>기본(가장 가능성 높음):</b> 엔비디아 서프라이즈 + 삼성 파업 현실화(but 공급쇼크로 가격 급등) + 이란 휴전 연장 → SK하이닉스·마이크론 강세, 삼성전자 단기 약세.</div>
+</div>
+
+<div class="sec-label">이번 주 핵심 일정</div>
+<div class="next-week">
+  <div class="nw-row hly"><div class="nw-day">5/17 오늘</div><div class="nw-items">긴급조정권 발동 공식 발표 주시 · 이란 협상 동향 모니터링</div></div>
+  <div class="nw-row hl"><div class="nw-day">5/18 월</div><div class="nw-items">코스피 개장 · <b>긴급조정권 결과</b> 소화 · 8000 돌파 시도 · 삼성 파업 D-3</div></div>
+  <div class="nw-row hl2"><div class="nw-day">5/19 화</div><div class="nw-items">엔비디아 실적 <b>전날</b> · AI 반도체 모멘텀 최고조 · 포지션 최종 확정</div></div>
+  <div class="nw-row hl2"><div class="nw-day">5/20 수</div><div class="nw-items">🔥 <b>엔비디아 실적</b>(장 마감 후) — 컨센 430억달러 · H200 중국 가이던스</div></div>
+  <div class="nw-row hlr"><div class="nw-day">5/21 목</div><div class="nw-items">⚡ 삼성 <b>파업 D-Day</b> + <b>이란 휴전 만료</b> — 동시 최대 변동성</div></div>
+  <div class="nw-row"><div class="nw-day">5/22~</div><div class="nw-items">이벤트 소화 후 순환매 확산 · 방산·전력·바이오·금융 주목</div></div>
+  <div class="nw-row"><div class="nw-day">6/17 수</div><div class="nw-items">워시 체제 <b>첫 FOMC</b> — 유가·이란 반영한 인하 신호</div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
