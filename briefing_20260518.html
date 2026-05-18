@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.05.18</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .break-banner { background: linear-gradient(135deg, #7C3AED 0%, #4F46E5 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1rem; }
+  .bb-eye { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#C4B5FD; margin-bottom:.4rem; }
+  .bb-title { font-size:18px; font-weight:700; margin-bottom:.4rem; line-height:1.4; }
+  .bb-sub { font-size:13px; color:#DDD6FE; line-height:1.65; }
+  .warn-banner { background:#FFF8E6; border:1px solid #FDE68A; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:1rem; display:flex; gap:10px; }
+  .wb-text { font-size:13px; color:#78350F; line-height:1.65; }
+  .wb-text b { font-weight:700; }
+  .focus-box { background:#EFF6FF; border:1px solid #BFDBFE; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#1D4ED8; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#1E3A8A; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-strike{background:#FFF1F2;color:#9F1239;}
+  .t-nvidia{background:#1a1a18;color:#6EE7B7;}
+  .t-break{background:#7C3AED;color:#fff;}
+  .t-gov{background:#FEF3C7;color:#92400E;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .next-week { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .nw-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .nw-row:last-child { border-bottom:none; }
+  .nw-row.hl { background:#DCFCE7; }
+  .nw-row.hl2 { background:#EEEDFE; }
+  .nw-row.hlr { background:#FCEBEB; }
+  .nw-row.hly { background:#FFF8E6; }
+  .nw-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .nw-items { color:#555; line-height:1.65; }
+  .nw-items b { color:#1a1a18; font-weight:600; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 5월 18일 (월)</div>
+</div>
+
+<div class="break-banner">
+  <div class="bb-eye">🚨 어제 극적 반전 — 이재용 6년 만의 대국민 사과</div>
+  <div class="bb-title">삼성 협상 오늘 재개 — 이재용 사과 + 교섭위원 교체 + 총리 긴급조정권 경고</div>
+  <div class="bb-sub">어제 이재용 회장 대국민 사과·교섭위원 전격 교체 → 오늘 중노위 협상 재개. 총리 "긴급조정권 포함 모든 수단 강구". 협상 타결 시 삼성전자 급등·코스피 8000 돌파 시나리오 현실화.</div>
+</div>
+
+<div class="warn-banner">
+  <div style="font-size:16px">⚡</div>
+  <div class="wb-text"><b>오늘이 파업 전 사실상 마지막 협상:</b> 총리가 "18일 교섭은 파업을 막을 수 있는 사실상 마지막 기회"라고 못박았다. 오늘 협상 결과가 삼성전자 주가와 코스피 방향을 전부 결정한다.</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">오늘의 핵심 초점</div>
+  <div class="focus-text">삼성전자 중노위 협상 결과(오늘 중) · 코스피 8000 돌파 시도 · 엔비디아 실적 D-2(5/20 장 마감 후) · 이란 협상 D-3 · 삼성전자 주가 방향(협상 타결 vs 결렬)</div>
+</div>
+
+<div class="sec-label">주요 지표 (5/15 마감 기준)</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">코스피</div><div class="mv up">7,981</div><div class="mch up">▲ 8000 문턱 · 타결 시 돌파</div></div>
+  <div class="mc"><div class="ml">삼성전자</div><div class="mv">26.8만</div><div class="mch up">▲ 타결 시 30만 목표</div></div>
+  <div class="mc"><div class="ml">브렌트유</div><div class="mv dn">$91</div><div class="mch dn">▼ 이란 협상 기대 유지</div></div>
+  <div class="mc"><div class="ml">달러/원</div><div class="mv up">1,445</div><div class="mch up">▲ 원화 강세</div></div>
+</div>
+
+<div class="sec-label">오늘의 핵심 이슈</div>
+
+<div class="card">
+  <div class="tag t-break">🔥 오늘 최대 이슈</div>
+  <div class="cheadline">이재용 6년 만의 대국민 사과 + 교섭위원 전격 교체 — 오늘 협상 타결 가능성↑</div>
+  <div class="cbody">이재용 회장이 어제(17일) "비바람은 내가 맞겠다"며 6년 만에 대국민 사과를 발표하고 사측 교섭위원을 전격 교체했다. 이는 삼성전자 역사상 유례없는 파격 조치로, 협상 타결 의지를 극적으로 내보인 것이다. 노조 측도 "물꼬가 트였다"는 반응을 보이며 오늘 중노위 교섭 재개에 응했다. 국무총리는 "18일이 파업을 막을 마지막 기회"라며 긴급조정권 발동 가능성을 공식 경고했다. 협상 타결 시 삼성전자 주가 급등 + 코스피 8000 돌파가 동시에 이뤄질 수 있는 최상의 시나리오다.</div>
+  <div class="csrc">한국경제 / 서울신문 / 딜사이트</div>
+</div>
+
+<div class="card">
+  <div class="tag t-gov">총리 긴급조정권 경고</div>
+  <div class="cheadline">김민석 총리 대국민 담화 — "하루 1조 손실, 글로벌 AI 반도체 전쟁서 우위 내줄 것"</div>
+  <div class="cbody">김민석 국무총리가 어제(17일) 정부서울청사에서 대국민 담화를 열고 "정부는 국민 경제 보호를 위해 긴급조정을 포함한 가능한 모든 대응 수단을 강구하지 않을 수 없다"고 밝혔다. 총리는 "삼성전자 반도체 공장은 단 하루만 정지돼도 최대 1조 원의 직접 손실이 발생하며, 생산라인 정상화에 수개월이 걸린다"며 "AI 반도체 전쟁에서 글로벌 우위를 경쟁국들에 통째로 내어주게 될까 우려된다"고 강조했다. 이는 사실상 '협상 안 되면 즉각 긴급조정권'이라는 최후통첩이다.</div>
+  <div class="csrc">한국경제</div>
+</div>
+
+<div class="card">
+  <div class="tag t-nvidia">D-2</div>
+  <div class="cheadline">엔비디아 실적 D-2 (5/20 장 마감 후) — H200 중국 가이던스·블랙웰 수요가 핵심</div>
+  <div class="cbody">엔비디아 실적까지 이틀. 컨센서스 매출 430억 달러(+65%), EPS 0.95달러. 미중 합의로 H200 중국 판매 승인 기대까지 더해져 기대치가 최고조다. 오늘·내일이 AI 반도체 모멘텀이 가장 강한 구간. 삼성전자 협상 타결 + 엔비디아 서프라이즈가 동시에 현실화되면 코스피 8000 안착 후 8500까지 논의될 수 있다. 단, 발표 직후 '소문에 팔기' 패턴 주의. 5/19(내일)까지 반도체 포지션을 최종 확정해 두는 것이 좋다.</div>
+  <div class="csrc">뉴스핌 / Investing.com</div>
+</div>
+
+<div class="card">
+  <div class="tag t-semi">삼성전자 시나리오</div>
+  <div class="cheadline">협상 타결 시 30만원 목표가 가시권 — 결렬 시 파업+긴급조정권 변동성 극대화</div>
+  <div class="cbody">타결 시: 삼성전자 단기 급등(목표가 30~32만원) + 코스피 8000 돌파 + SK하이닉스도 동반 강세. 결렬 시: 총파업 현실화 → 긴급조정권 발동(30일 파업 금지) → 삼성전자 단기 반등 or 파업 강행 → 삼성전자 급락·SK하이닉스·마이크론 폭등의 양극화 구도. 오늘 협상 결과가 이번 주 삼성전자 주가 방향을 100% 결정한다. 중노위 교섭 결과를 실시간으로 확인하며 대응하는 것이 필수다.</div>
+  <div class="csrc">한국경제 / 뉴스1</div>
+</div>
+
+<div class="card">
+  <div class="tag t-pos">코스피 8000 조건</div>
+  <div class="cheadline">삼성 타결 + 엔비디아 서프라이즈 + 이란 기본합의 — 3박자 맞으면 8000 안착</div>
+  <div class="cbody">코스피 8000 안착의 3가지 조건: ① 삼성전자 파업 타결 ② 엔비디아 5/20 어닝 서프라이즈 ③ 이란 기본합의·호르무즈 개방. 3가지가 모두 맞으면 코스피 8000~8500 논의 현실화. 현재 선행 PER은 8배 미만으로 글로벌 저평가 구간. 키움증권은 이미 8000 돌파를 전망했고, 대신증권은 8000 후반까지 상승 여력이 있다고 봤다. 오늘 협상 타결이 그 방아쇠가 될 수 있다.</div>
+  <div class="csrc">키움증권 / 대신증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-warn">이란 D-3</div>
+  <div class="cheadline">이란 휴전 만료 D-3 — 기본합의 성사 시 유가 $85 급락·인하 기대 폭발</div>
+  <div class="cbody">이란 휴전 만료(5/21)까지 3일. 미중 정상회담 합의를 바탕으로 중국이 이란을 압박하는 중. 기본합의 성사 시 호르무즈 재개방 → 브렌트유 $85 급락 → PCE 2%대 → 워시 6월 FOMC 인하 신호. 이란과 이스라엘 간 긴장도 주시 필요. 이번 주 삼성 파업 + 엔비디아 + 이란 세 이벤트가 동시에 터지는 만큼 변동성 관리가 무엇보다 중요하다.</div>
+  <div class="csrc">Investing.com / 파이낸셜뉴스</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">오늘 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">오전 — 협상 타결 여부가 모든 것</div>
+  <div class="i-body">오늘 중노위 교섭 결과를 실시간으로 확인한다. 타결 뉴스가 나오는 순간 삼성전자·코스피 동반 급등이 예상된다. 결렬 시 긴급조정권 발동 여부가 다음 변수. 어느 쪽이든 결과 확인 전 삼성전자 신규 매수는 자제하고, 결과 나온 후 방향에 따라 대응하는 것이 원칙이다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">5/19(내일) — 엔비디아 전날, 반도체 모멘텀 최고조</div>
+  <div class="i-body">엔비디아 실적(5/20 장 마감 후) 전날이 AI 반도체 모멘텀의 정점이 될 가능성이 높다. 내일까지 반도체 포지션 비중을 최종 확정하고, 엔비디아 발표 직후 소문에 팔기 패턴에 대비해 일부 차익실현을 준비해 둘 것. 삼성전자 협상 결과에 따라 오늘 삼성/SK하이닉스 비중 조정이 필요할 수 있다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">이번 주 최우선 체크 — 협상→엔비디아→이란 순</div>
+  <div class="i-body">① 오늘 삼성전자 중노위 협상 결과 → 삼성전자 비중 결정 ② 5/20 엔비디아 실적 → AI 반도체 섹터 방향 확정 ③ 5/21 이란 휴전 만료 + 파업 D-Day → 유가·반도체 동시 변동성. 세 이벤트를 모두 소화한 5/22 이후부터 순환매 확산(방산·전력·바이오·금융)이 본격화될 전망이다.</div>
+</div>
+
+<div class="sec-label">이번 주 핵심 일정</div>
+<div class="next-week">
+  <div class="nw-row hlr"><div class="nw-day">5/18 오늘</div><div class="nw-items">삼성전자 <b>중노위 협상 재개</b>(파업 전 마지막) · 이재용 사과 후속 · 코스피 8000 시도</div></div>
+  <div class="nw-row hl2"><div class="nw-day">5/19 화</div><div class="nw-items">엔비디아 실적 <b>전날</b> · AI 반도체 모멘텀 최고조 · 포지션 최종 확정</div></div>
+  <div class="nw-row hl2"><div class="nw-day">5/20 수</div><div class="nw-items">🔥 <b>엔비디아 실적</b>(장 마감 후) — 컨센 430억달러 · H200 중국 가이던스</div></div>
+  <div class="nw-row hlr"><div class="nw-day">5/21 목</div><div class="nw-items">⚡ 삼성 <b>파업 D-Day</b> + <b>이란 휴전 만료</b> — 동시 최대 변동성</div></div>
+  <div class="nw-row hl"><div class="nw-day">5/22~</div><div class="nw-items">이벤트 소화 후 <b>순환매</b> 확산 · 방산·전력·바이오·금융 주목</div></div>
+  <div class="nw-row"><div class="nw-day">5/29 목</div><div class="nw-items">MSCI 한국지수 <b>리밸런싱</b> — 레인보우로보틱스 편입</div></div>
+  <div class="nw-row hl2"><div class="nw-day">6/17 수</div><div class="nw-items">워시 체제 <b>첫 FOMC</b> — 인하 신호 여부</div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
