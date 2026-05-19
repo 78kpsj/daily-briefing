@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.05.20</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .main-banner { background: linear-gradient(135deg, #312E81 0%, #1E40AF 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1rem; }
+  .mb-eye { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#A5B4FC; margin-bottom:.4rem; }
+  .mb-title { font-size:18px; font-weight:700; margin-bottom:.4rem; line-height:1.4; }
+  .mb-sub { font-size:13px; color:#C7D2FE; line-height:1.65; }
+  .alert-red { background:#FCEBEB; border:1px solid #FCA5A5; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:1rem; display:flex; gap:10px; }
+  .ar-text { font-size:13px; color:#7F1D1D; line-height:1.65; }
+  .ar-text b { font-weight:700; }
+  .focus-box { background:#EFF6FF; border:1px solid #BFDBFE; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#1D4ED8; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#1E3A8A; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-strike{background:#FFF1F2;color:#9F1239;}
+  .t-nvidia{background:#312E81;color:#A5B4FC;}
+  .t-adj{background:#FEF3C7;color:#92400E;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .scenario { background:#f8f7f4; border-radius:8px; padding:.75rem .9rem; margin-top:8px; }
+  .sc-title { font-size:12px; font-weight:700; margin-bottom:3px; }
+  .sc-body { font-size:12px; color:#555; line-height:1.6; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .timeline { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .tl-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .tl-row:last-child { border-bottom:none; }
+  .tl-row.nvidia { background:#EDE9FE; }
+  .tl-row.strike { background:#FCEBEB; }
+  .tl-row.good { background:#DCFCE7; }
+  .tl-row.warn { background:#FFF8E6; }
+  .tl-time { font-weight:700; color:#534AB7; min-width:60px; flex-shrink:0; font-size:12px; }
+  .tl-items { color:#555; line-height:1.65; }
+  .tl-items b { color:#1a1a18; font-weight:600; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 5월 20일 (수)</div>
+</div>
+<div class="main-banner">
+  <div class="mb-eye">🔥 오늘 밤 AI 슈퍼사이클 최종 판가름</div>
+  <div class="mb-title">엔비디아 1분기 실적 발표 — 매출 787억달러 +79% 예상, 어닝 서프라이즈 유력</div>
+  <div class="mb-sub">지난주 코스피 8046→7493 급락 후 반등 시험 · 삼성전자 조정안 오늘 제시 예정 · 이란 휴전 만료 D-1 · 삼성 파업 D-1</div>
+</div>
+<div class="alert-red">
+  <div style="font-size:16px">⚠️</div>
+  <div class="ar-text"><b>코스피 지난주 금요일 -6.12% 급락 — 7,493 마감 이후 반등 시험 중:</b> 8046 고점 후 하루 만에 -6%. 미국채 10년물 4.5% + 원달러 1500원 돌파가 트리거. 이번 주 예상 밴드 7200~8100. 오늘 엔비디아 실적이 반등 방아쇠가 될 수 있다.</div>
+</div>
+<div class="focus-box">
+  <div class="focus-label">오늘의 핵심 초점</div>
+  <div class="focus-text">삼성전자 중노위 조정안 제시(오늘 오전) · 오늘 밤 엔비디아 실적 발표 · 이란 휴전 만료 D-1 · 삼성전자 파업 D-1 · 내일 5/21 CPI + FOMC 의사록 + 파업 D-Day + 이란 만료 동시 발생</div>
+</div>
+<div class="sec-label">주요 지표 (5/15 급락 후 기준)</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">코스피</div><div class="mv dn">7,493</div><div class="mch dn">▼ -6.12% 급락 마감</div></div>
+  <div class="mc"><div class="ml">삼성전자</div><div class="mv">약 26만</div><div class="mch neu">— 협상 결과 대기</div></div>
+  <div class="mc"><div class="ml">브렌트유</div><div class="mv dn">$89</div><div class="mch dn">▼ 이란 기대 유지</div></div>
+  <div class="mc"><div class="ml">달러/원</div><div class="mv dn">1,500</div><div class="mch dn">▼ 급등 후 부담</div></div>
+</div>
+<div class="sec-label">오늘의 핵심 이슈</div>
+<div class="card">
+  <div class="tag t-nvidia">🔥 오늘 밤 최대 이벤트</div>
+  <div class="cheadline">엔비디아 1분기 실적 발표 — 매출 787억달러 +79% 예상, 어닝 서프라이즈 거의 확실</div>
+  <div class="cbody">오늘 미국 장 마감 후 엔비디아가 2027 회계연도 1분기 실적을 발표한다. LSEG 컨센서스는 매출 787억달러(+79%), 조정 EPS 1.74달러(+115%). 블랙웰 GB300 수요와 그레이스 블랙웰 플랫폼 기반 강력한 성장이 예상된다. 빅테크들의 올해 AI CAPEX 합산 7000억달러(전년比 +75%)가 직접 수요로 연결된다. 핵심 체크: ① H200 중국 판매 공식 가이던스 ② 블랙웰 수요 지속성 ③ 차기 GB400 언급 여부. 서프라이즈 시 내일 코스피 반등 + AI 반도체 강세. 실망 시 차익실현 매물 추가.</div>
+  <div class="csrc">한국경제 / LSEG / 와우글로벌</div>
+  <div class="scenario">
+    <div class="sc-title up">✅ 서프라이즈 시</div>
+    <div class="sc-body">내일 코스피 7600~7800 반등 · SK하이닉스·한미반도체 강세 · AI 반도체 랠리 재개</div>
+  </div>
+  <div class="scenario" style="margin-top:6px;">
+    <div class="sc-title dn">❌ 실망 시</div>
+    <div class="sc-body">파업·이란 D-Day와 겹쳐 코스피 7200 테스트 가능 · 반도체 추가 조정</div>
+  </div>
+</div>
+<div class="card">
+  <div class="tag t-adj">삼성전자 오늘 오전</div>
+  <div class="cheadline">중노위 조정안 제시 예정 — "오전 안에 정리" 중노위원장 발언, 노조 수용 여부가 관건</div>
+  <div class="cbody">어제(19일) 협상에서 일부 쟁점 입장 차를 좁힌 가운데, 박수근 중노위원장이 "오전 안에 정리하겠다"고 밝혔다. 중노위 조정안의 핵심은 OPI 상한을 유지하되 올해 특별 성과급을 영업이익 12%까지 지급하는 중간안인 것으로 알려졌다. 노조는 15%를 요구하고 있어 3%p 간격이 남아있다. 조정안이 나와도 노사 양측이 서명해야 효력이 생긴다. 노조가 거부하면 긴급조정권 발동 또는 파업 현실화. 오전 중 결과가 나올 것으로 보여 개장 직후 삼성전자 주가 방향을 결정한다.</div>
+  <div class="csrc">머니투데이 / 한국일보</div>
+</div>
+<div class="card">
+  <div class="tag t-pos">코스피 급락 해석</div>
+  <div class="cheadline">지난주 -6.12% 급락 — "추세 훼손 아닌 과열 해소 과정"</div>
+  <div class="cbody">지난주 금요일(15일) 코스피가 8046에서 7493으로 -6.12% 급락한 것은 두 가지 요인이 복합된 결과다. 미국채 10년물 금리가 4.5%를 돌파하고 원달러 환율이 1500원을 넘어서면서 위험자산 회피 심리가 강해졌다. 그러나 대신증권과 파이낸셜뉴스 분석에 따르면 이를 추세 훼손보다 단기 급등 이후 과열을 해소하는 건강한 조정 과정으로 보고 있다. 이번 주 예상 밴드 7200~8100. 엔비디아 실적이 예상 상회하면 7600~7800 빠른 회복이 가능하다.</div>
+  <div class="csrc">파이낸셜뉴스 / 대신증권</div>
+</div>
+<div class="card">
+  <div class="tag t-warn">내일 D-Day</div>
+  <div class="cheadline">5/21 삼성 파업 D-Day + 이란 휴전 만료 + CPI + FOMC 의사록 동시 폭발</div>
+  <div class="cbody">내일(5/21)은 올해 가장 이벤트가 밀집된 날이다. ① 삼성전자 총파업 예고 D-Day(긴급조정권 발동 또는 파업 시작) ② 이란 휴전 만료(기본합의 서명 여부 확인) ③ 미국 4월 CPI 발표(유가 하락 반영 여부) ④ FOMC 4월 의사록 공개(워시 체제 첫 신호). 결과에 따라 코스피는 7200~8100 밴드 안에서 극단으로 움직일 수 있다. 오늘 엔비디아 결과를 확인하고 내일 포지션을 최소화해 두는 것이 리스크 관리의 핵심이다.</div>
+  <div class="csrc">뉴스핌 / 파이낸셜뉴스</div>
+</div>
+<div class="card">
+  <div class="tag t-semi">순환매 분석</div>
+  <div class="cheadline">반도체 쏠림 완화 — 기계·IT하드웨어·방산·전력으로 순환매 확산 관건</div>
+  <div class="cbody">대신증권 이경민 연구원은 "금융투자의 월초 반도체 집중 매수가 이달 중순 이후 완화되며 순환매 장세를 주도할 전망"이라며 "반도체를 제외한 기계, IT하드웨어 등의 업종 확장 여부가 관건"이라고 분석했다. 지난주 급락 이후 반도체 외 방산·전력·바이오·금융 등으로 순환매가 확산되면 지수 안정성이 높아진다. 엔비디아 실적 이후 AI 테마가 피지컬 AI·에너지 인프라로 확산되는 흐름에 주목할 필요가 있다.</div>
+  <div class="csrc">대신증권 / 파이낸셜뉴스</div>
+</div>
+<div class="card">
+  <div class="tag t-pos">새 상품 등장</div>
+  <div class="cheadline">삼성전자·SK하이닉스 2배 ETF 5/22 국내 상장 — 변동성 관리 주의</div>
+  <div class="cbody">삼성전자·SK하이닉스 단일종목 ±2배 레버리지·인버스 ETF가 5월 22일 국내 최초로 한국거래소에 상장된다. 지금까지는 해외에서만 살 수 있었지만 이제 원화로 직접 매수가 가능해진다. 단, 레버리지 ETF는 횡보장에서 원금이 녹아내리는 구조다. 변동성이 높은 지금 환경에서 레버리지 상품은 단기 트레이딩 목적으로만 활용하고, 장기 투자에는 부적합하다. 파업·엔비디아 이벤트와 맞물려 출시 초기 과도한 변동성이 나타날 수 있다.</div>
+  <div class="csrc">인포집합소</div>
+</div>
+<div class="divider"></div>
+<div class="sec-label">오늘 투자 전략</div>
+<div class="insight">
+  <div class="i-title">오전 — 삼성전자 조정안 수용 여부 먼저 확인</div>
+  <div class="i-body">중노위가 오전 중 조정안을 제시한다. 노조 수용 → 파업 유예·삼성전자 반등. 거부 → 긴급조정권 발동 또는 파업 현실화. 결과가 나오기 전 삼성전자 신규 매수는 자제하고, 결과 확인 후 방향에 따라 대응한다.</div>
+</div>
+<div class="insight">
+  <div class="i-title">오늘 밤 엔비디아 — 결과 확인 후 내일 대응</div>
+  <div class="i-body">컨센서스(매출 787억달러) 상회 시 내일 코스피 반등 + AI 반도체 강세가 예상된다. 그러나 내일은 CPI+FOMC 의사록+파업+이란 D-Day가 동시에 쏟아진다. 엔비디아 서프라이즈가 나와도 이 변수들이 상쇄할 수 있다. 오늘 밤 결과를 확인하되, 내일 개장 전 포지션은 가볍게 가져가는 것을 강력히 권한다.</div>
+</div>
+<div class="insight">
+  <div class="i-title">내일(5/21) 대비 — 모든 이벤트 전 현금 비중 최대화</div>
+  <div class="i-body">내일은 2026년 증시 최대 변동성 구간이다. 어느 방향으로든 5~10% 움직임이 가능하다. 레버리지 포지션은 오늘 장 마감 전 반드시 정리할 것. 결과를 확인한 후 5/22부터 방향에 맞게 재진입하는 전략이 가장 안전하다. 5/22 삼성전자·SK하이닉스 2배 ETF 상장도 감안해 다양한 대응 수단을 미리 파악해 두자.</div>
+</div>
+<div class="sec-label">오늘~이번 주 타임라인</div>
+<div class="timeline">
+  <div class="tl-row warn"><div class="tl-time">5/20 오전</div><div class="tl-items">삼성전자 <b>중노위 조정안 제시</b> — 노조 수용 여부가 파업 D-1 분수점</div></div>
+  <div class="tl-row nvidia"><div class="tl-time">5/20 밤</div><div class="tl-items">🔥 <b>엔비디아 실적</b>(장 마감 후) — 컨센 매출 787억달러·EPS 1.74달러</div></div>
+  <div class="tl-row strike"><div class="tl-time">5/21 오전</div><div class="tl-items">⚡ 삼성 <b>파업 D-Day</b> · 이란 <b>휴전 만료</b> · 미 4월 <b>CPI</b> · <b>FOMC 의사록</b></div></div>
+  <div class="tl-row good"><div class="tl-time">5/22</div><div class="tl-items">삼성·SK하이닉스 2배 ETF 상장 · 이벤트 소화 후 순환매 확산 시작</div></div>
+  <div class="tl-row"><div class="tl-time">5/29</div><div class="tl-items">MSCI 한국지수 <b>리밸런싱</b> — 레인보우로보틱스 편입</div></div>
+  <div class="tl-row"><div class="tl-time">6/17</div><div class="tl-items">워시 체제 <b>첫 FOMC</b> — 인하 신호 여부</div></div>
+</div>
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
