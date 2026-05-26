@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.05.26</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .main-banner { background: linear-gradient(135deg, #1e3a5f 0%, #1a1a18 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1rem; }
+  .mb-eye { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#93C5FD; margin-bottom:.4rem; }
+  .mb-title { font-size:18px; font-weight:700; margin-bottom:.4rem; line-height:1.4; }
+  .mb-sub { font-size:13px; color:#BFDBFE; line-height:1.65; }
+  .warn-banner { background:#FCEBEB; border:1px solid #FCA5A5; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:.75rem; display:flex; gap:10px; }
+  .wb-text { font-size:13px; color:#7F1D1D; line-height:1.65; }
+  .wb-text b { font-weight:700; }
+  .info-banner { background:#EDE9FE; border:1px solid #C4B5FD; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:1rem; display:flex; gap:10px; }
+  .ib-text { font-size:13px; color:#4C1D95; line-height:1.65; }
+  .ib-text b { font-weight:700; }
+  .focus-box { background:#EFF6FF; border:1px solid #BFDBFE; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#1D4ED8; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#1E3A8A; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-iran{background:#FEF3C7;color:#92400E;}
+  .t-samsung{background:#EDE9FE;color:#4C1D95;}
+  .t-macro{background:#FEF0E7;color:#854F0B;}
+  .t-msci{background:#F5F3FF;color:#6D28D9;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .next-week { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .nw-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .nw-row:last-child { border-bottom:none; }
+  .nw-row.hl { background:#DCFCE7; }
+  .nw-row.hl2 { background:#EEEDFE; }
+  .nw-row.hly { background:#FFF8E6; }
+  .nw-row.hlr { background:#FCEBEB; }
+  .nw-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .nw-items { color:#555; line-height:1.65; }
+  .nw-items b { color:#1a1a18; font-weight:600; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 5월 26일 (화)</div>
+</div>
+
+<div class="main-banner">
+  <div class="mb-eye">📅 이번 주 핵심 이벤트 집중</div>
+  <div class="mb-title">삼성 가처분 + 이란 "틀 합의" + 오늘 밤 PCE — 이번 주 결정적 구간</div>
+  <div class="mb-sub">오늘 동행노조 가처분 신청 · 이란 "서명 임박 아냐" · 오늘 밤 미국 4월 PCE 발표 · 내일 삼성 찬반투표 마감 · 목요일 MSCI 리밸런싱</div>
+</div>
+
+<div class="warn-banner">
+  <div style="font-size:16px">⚠️</div>
+  <div class="wb-text"><b>오늘 오전 삼성 DX노조, 찬반투표 중지 가처분 신청:</b> 동행노조가 수원지법에 투표 중지 가처분을 신청했다. 법원이 인용하면 찬반투표가 중단돼 파업 불확실성이 재점화. 기각하면 27일 예정대로 마감 → 가결 전망.</div>
+</div>
+
+<div class="info-banner">
+  <div style="font-size:16px">🕊️</div>
+  <div class="ib-text"><b>이란 "큰 틀 합의, 서명 임박은 아냐":</b> 이란 외무부가 MOU 체결과 관련해 "상당 부분 합의를 이뤘지만 서명이 임박한 것은 아니다"고 밝혔다. 합의 틀은 잡혔지만 세부 조율이 남은 상태. 유가는 $86 내외 유지.</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">오늘의 초점</div>
+  <div class="focus-text">삼성전자 찬반투표 가처분 법원 결정(오늘 중) · 오늘 밤 미국 4월 PCE 발표 · 이란 MOU 세부 조율 · 내일(27일) 삼성 찬반투표 마감 · 5/29 MSCI 리밸런싱 · 6/17 워시 첫 FOMC</div>
+</div>
+
+<div class="sec-label">주요 지표</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">코스피(어제)</div><div class="mv up">7,820↑</div><div class="mch up">▲ 이란 틀합의 반응</div></div>
+  <div class="mc"><div class="ml">브렌트유</div><div class="mv dn">$86</div><div class="mch dn">▼ 합의 기대 유지</div></div>
+  <div class="mc"><div class="ml">삼성전자</div><div class="mv up">28.7만</div><div class="mch up">▲ 파업 해소 기대</div></div>
+  <div class="mc"><div class="ml">나스닥</div><div class="mv up">26,100↑</div><div class="mch up">▲ 강세 지속</div></div>
+</div>
+
+<div class="sec-label">오늘의 핵심 이슈</div>
+
+<div class="card">
+  <div class="tag t-samsung">🔥 오늘 오전 긴급</div>
+  <div class="cheadline">동행노조, 오늘 오전 9시 수원지법에 찬반투표 중지 가처분 신청</div>
+  <div class="cbody">DX부문(모바일·가전) 직원 중심 동행노조가 오늘 오전 9시 수원지방법원에 "2026년 임금협상 잠정합의안 찬반투표 절차 중지" 가처분을 신청한다. 동행노조는 "초기업노조가 DX 결집을 두려워해 자신들을 투표에서 배제했다"며 절차적 정당성을 문제 삼고 있다. 법원 결정 시나리오: ① 기각 → 투표 예정대로 27일 마감, 가결 가능성 높아 삼성전자 주가 상승. ② 인용 → 투표 중단, 파업 불확실성 재점화, 삼성전자 약세·SK하이닉스 반사수혜 재부각. 오늘 법원 결정이 삼성전자 주가의 단기 분수점이다.</div>
+  <div class="csrc">헤럴드경제 / 연합뉴스</div>
+</div>
+
+<div class="card">
+  <div class="tag t-iran">이란 합의 현황</div>
+  <div class="cheadline">이란 "큰 틀 합의, 서명 임박 아냐" — MOU 세부 조율 단계, 주 후반 발표 기대</div>
+  <div class="cbody">이란 외무부 대변인이 "미국과 종전 MOU 체결과 관련해 큰 틀에서 합의를 이뤘다"면서도 "서명이 임박한 것은 아니다"고 밝혔다. 이란 반관영 ISNA도 합의 틀 마련을 목표로 메시지 교환이 진행 중이라고 보도했다. 핵 농축 수준과 호르무즈 통제권 세부 조율이 마지막 쟁점. 루비오 장관의 "며칠 내 발표 가능" 발언을 감안하면 이번 주 후반(27~30일) 발표 가능성이 여전히 높다. 합의 서명 시 유가 $80 급락 시나리오는 그대로 유효하다.</div>
+  <div class="csrc">시사저널 / 헤럴드경제 / YTN</div>
+</div>
+
+<div class="card">
+  <div class="tag t-macro">🔥 오늘 밤 최대 이벤트</div>
+  <div class="cheadline">미국 4월 PCE 발표 (오늘 밤 9시 30분) — 근원 2.7% 예상, 하회 시 6월 FOMC 인하 기대</div>
+  <div class="cbody">오늘 밤 9시 30분(미국 동부 오전 8시 30분) 미국 4월 개인소비지출(PCE) 가격지수가 발표된다. 4월은 유가가 $107→$95대로 하락한 시기로, 헤드라인 PCE 에너지 부문 기여도가 낮아질 전망. 근원 PCE 예상치는 전년비 2.7%. 만약 2.6% 이하로 나오면 워시 의장의 6월 17일 첫 FOMC에서 인하 신호 조건이 충족된다. 반대로 3% 이상이면 성장주 추가 부담. 삼성 가처분 결과와 PCE가 모두 긍정적으로 나오면 내일 코스피 8000 재탈환 시도가 가능하다.</div>
+  <div class="csrc">뉴스핌 / DAOL증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-pos">코스피 반등 흐름</div>
+  <div class="cheadline">어제 7,820 돌파 — 이란 틀합의 + 삼성 파업 기대 + 엔비디아 강세 반영</div>
+  <div class="cbody">어제(25일) 코스피가 7,820선을 돌파하며 반등 흐름을 이어갔다. 이란의 "큰 틀 합의" 발언과 삼성전자 찬반투표 가결 기대, 엔비디아 강세가 복합 작용했다. 삼성전자는 28.7만원선으로 회복됐고, SK하이닉스도 HBM4 수요 기대를 유지 중이다. 오늘 PCE와 삼성 가처분 결과에 따라 7800~8000 구간을 결정하는 중요한 하루가 될 전망이다.</div>
+  <div class="csrc">파이낸셜뉴스 / 대신증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-msci">5/29 MSCI D-3</div>
+  <div class="cheadline">레인보우로보틱스 MSCI 편입 D-3 — 피지컬 AI·로봇 순환매 이번 주 클라이맥스</div>
+  <div class="cbody">5월 29일 MSCI 한국지수 리밸런싱이 3일 앞으로 다가왔다. 레인보우로보틱스 편입에 따른 패시브 자금 유입 기대가 주가를 지지하고 있다. 역사적으로 MSCI 편입 확정 후 리밸런싱 실행일까지 수급 강화가 지속되는 패턴이 반복됐다. 두산로보틱스·뉴로메카 등 로봇 관련주도 동반 수혜. 한진칼 편출에 따른 수급 충격(약 950억)은 29일 장 마감 후 실행됨을 감안해야 한다.</div>
+  <div class="csrc">하나증권 / 더벨</div>
+</div>
+
+<div class="card">
+  <div class="tag t-semi">AI 랠리 지속</div>
+  <div class="cheadline">엔비디아 12연속 신기록 여파 — SK하이닉스 HBM4 공급 확대 기대, AI 인프라 순환매</div>
+  <div class="cbody">엔비디아의 12연속 매출 신기록 확인 이후 AI 수요 구조적 확대에 대한 시장 신뢰가 높아졌다. SK하이닉스는 HBM4 전량 완판 상태를 유지하며 2분기 컨센서스가 60조원 이상으로 상향됐다. AI 인프라 테마는 반도체에서 전력(LS ELECTRIC·HD현대일렉트릭)·냉각·케이블로 확산되는 흐름이 이어지고 있다. 삼성전자는 파업 리스크 해소 후 HBM4E 공급 재개 기대가 주가 재평가 촉매가 될 전망이다.</div>
+  <div class="csrc">머니투데이 / 유안타증권</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">오늘 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">오전 — 삼성전자 가처분 결과 먼저 확인</div>
+  <div class="i-body">법원 결정이 오전 중 나올 가능성이 높다. 기각 → 삼성전자 매수 기회, 코스피 강세 유지. 인용 → 삼성전자 단기 약세, SK하이닉스 비중 유지·확대. 결과를 확인하기 전 삼성전자 신규 매수는 자제하고, 결과 나온 후 방향에 따라 대응하는 것이 원칙이다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">오늘 밤 PCE — 기대감 속 결과 확인 후 대응</div>
+  <div class="i-body">근원 PCE 2.6% 이하 → 6월 인하 기대 급복원, 성장주·채권 긍정적. 예상 부합(2.7%) → 중립 소화. 3% 이상 → 금리 인하 기대 추가 후퇴, 성장주 부담. 결과에 따라 삼성전자 가처분과 함께 내일 코스피 방향이 결정된다. 오늘 밤은 결과를 확인하고 내일 개장 방향을 미리 가늠해 두는 것이 중요하다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">이번 주 남은 이벤트 — 삼성 마감·MSCI가 마무리</div>
+  <div class="i-body">내일(27일) 삼성 찬반투표 마감, 목요일(29일) MSCI 리밸런싱이 이번 주 마지막 두 이벤트다. 이란 합의가 주 후반에 나오면 코스피 8000 재탈환 후 8100~8300까지 상승 여력이 열린다. 반도체·로봇·방산의 균형 있는 포트폴리오를 이번 주 안에 완성하는 것을 권한다.</div>
+</div>
+
+<div class="sec-label">이번 주 남은 일정</div>
+<div class="next-week">
+  <div class="nw-row hlr"><div class="nw-day">5/26 오늘</div><div class="nw-items">삼성 <b>찬반투표 가처분</b> 법원 결정 · 오늘 밤 <b>미국 4월 PCE</b> (9시 30분)</div></div>
+  <div class="nw-row hly"><div class="nw-day">5/27 수</div><div class="nw-items">삼성전자 <b>찬반투표 마감</b> · 이란 MOU 세부 조율 · 이란 합의 발표 가능</div></div>
+  <div class="nw-row hl2"><div class="nw-day">5/29 목</div><div class="nw-items">MSCI 한국지수 <b>리밸런싱</b>(장 마감 후) — 레인보우로보틱스 편입</div></div>
+  <div class="nw-row hly"><div class="nw-day">이번 주</div><div class="nw-items">미·이란 <b>종전 MOU 서명</b> 여부 — 주 후반 발표 가능성</div></div>
+  <div class="nw-row"><div class="nw-day">6/17 수</div><div class="nw-items">워시 체제 <b>첫 FOMC</b> — PCE·이란 반영한 인하 신호</div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
