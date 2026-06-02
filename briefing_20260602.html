@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.06.02</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .main-banner { background: linear-gradient(135deg, #1a1a18 0%, #1e3a5f 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1rem; }
+  .mb-eye { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#93C5FD; margin-bottom:.4rem; }
+  .mb-title { font-size:20px; font-weight:700; margin-bottom:.4rem; }
+  .mb-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:.8rem; }
+  .mb-stat { background:rgba(255,255,255,0.08); border-radius:8px; padding:.55rem .75rem; }
+  .mb-stat-l { font-size:10px; color:#9CA3AF; margin-bottom:2px; }
+  .mb-stat-v { font-size:14px; font-weight:700; }
+  .g{color:#6EE7B7;} .r{color:#FCA5A5;}
+  .warn-banner { background:#FFF8E6; border:1px solid #FDE68A; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:1rem; display:flex; gap:10px; }
+  .wb-text { font-size:13px; color:#78350F; line-height:1.65; }
+  .wb-text b { font-weight:700; }
+  .focus-box { background:#EFF6FF; border:1px solid #BFDBFE; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#1D4ED8; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#1E3A8A; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-iran{background:#FEF3C7;color:#92400E;}
+  .t-space{background:#0F172A;color:#93C5FD;}
+  .t-msci{background:#F5F3FF;color:#6D28D9;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .next-week { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .nw-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .nw-row:last-child { border-bottom:none; }
+  .nw-row.hl { background:#DCFCE7; }
+  .nw-row.hl2 { background:#EEEDFE; }
+  .nw-row.hly { background:#FFF8E6; }
+  .nw-row.hlr { background:#FEF3C7; }
+  .nw-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .nw-items { color:#555; line-height:1.65; }
+  .nw-items b { color:#1a1a18; font-weight:600; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } .mb-stats{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 6월 2일 (화)</div>
+</div>
+
+<div class="main-banner">
+  <div class="mb-eye">📅 어제(6/1) 역사 — 코스피 8700 첫 돌파</div>
+  <div class="mb-title">삼성전자 34만원 신고가 · 이란 종전 기대 폭발 · 6월 빅이벤트 달력 개막</div>
+  <div class="mb-stats">
+    <div class="mb-stat"><div class="mb-stat-l">코스피 장중 최고</div><div class="mb-stat-v g">8,733</div></div>
+    <div class="mb-stat"><div class="mb-stat-l">삼성전자 신고가</div><div class="mb-stat-v g">34.2만원</div></div>
+    <div class="mb-stat"><div class="mb-stat-l">이란 MOU</div><div class="mb-stat-v r">서명 진행 중</div></div>
+  </div>
+</div>
+
+<div class="warn-banner">
+  <div style="font-size:16px">⚠️</div>
+  <div class="wb-text"><b>이란 MOU 아직 미서명 — 트럼프 추가 양보 요구·이란 수정안 제시 예정:</b> 어제 8700 돌파는 기대감 선반영. 실제 서명 전까지 차익실현 압력이 언제든 나올 수 있다. 오늘도 이란 뉴스 실시간 모니터링 필수.</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">오늘의 초점</div>
+  <div class="focus-text">이란 MOU 서명 여부 · 코스피 8700 안착 vs 차익실현 · 외국인 17연속 순매도 지속 여부 · 내일 6/3 지방선거 · 스페이스X 6/12 상장 기대 선반영 · MSCI 선진국 편입 결정 임박</div>
+</div>
+
+<div class="sec-label">주요 지표 (6/1 마감)</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">코스피 장중 최고</div><div class="mv up">8,733</div><div class="mch up">▲ 사상 첫 8700 돌파</div></div>
+  <div class="mc"><div class="ml">삼성전자</div><div class="mv up">34.2만</div><div class="mch up">▲ 신고가</div></div>
+  <div class="mc"><div class="ml">브렌트유</div><div class="mv dn">$99</div><div class="mch dn">▼ 종전 기대 하락</div></div>
+  <div class="mc"><div class="ml">나스닥</div><div class="mv up">26,972</div><div class="mch up">▲ 신고가 경신</div></div>
+</div>
+
+<div class="sec-label">오늘의 핵심 이슈</div>
+
+<div class="card">
+  <div class="tag t-hot">🔥 어제 역사</div>
+  <div class="cheadline">코스피 8700 사상 첫 돌파 — 삼성전자 34.2만 신고가, 6000→8000 단 99거래일</div>
+  <div class="cbody">어제(6/1) 코스피가 장중 8733까지 오르며 사상 처음으로 8700선을 돌파했다. 이란 종전 협상 기대감에 미국 증시가 강세를 보이고 AI 투자 낙관론도 힘을 받으면서 기관 중심 매수가 폭발했다. 삼성전자는 34만 2000원의 신고가를 경신했다. 나스닥지수도 2만 6972로 신고가를 경신했다. 코스피 6000 돌파 후 8000까지 99거래일이 걸렸는데, 8000→8700은 단 10거래일 만이다. 시총 7000조원도 돌파했다. 다만 외국인이 1조 2000억원 순매도하며 17거래일 연속 순매도 기조를 유지했다.</div>
+  <div class="csrc">머니투데이 / 이투데이 / 뉴스1</div>
+</div>
+
+<div class="card">
+  <div class="tag t-iran">이란 MOU 진행 중</div>
+  <div class="cheadline">트럼프 "이란에 추가 양보 요구" — 이란 수정안 제시 예정, 서명 임박 기대</div>
+  <div class="cbody">트럼프 대통령이 이란전 종식을 위한 MOU 초안 최종 승인 전 이란에 추가 양보를 요구했다고 알려졌다. 이란도 새로운 수정안을 제시할 예정이라고 이란 타스님 통신이 보도했다. 합의안 핵심은 이란이 호르무즈 해협 기뢰를 제거하고 선박 통항을 보장하는 대신, 미국이 해상 봉쇄를 단계적으로 해제하는 방식이다. 서명이 현실화되면 유가 $80대 급락 → PCE 개선 → 워시 인하 신호 → 코스피 9000 논의가 현실화된다.</div>
+  <div class="csrc">한국경제 / MBC뉴스 / 타스님통신</div>
+</div>
+
+<div class="card">
+  <div class="tag t-space">6/12 빅이벤트</div>
+  <div class="cheadline">스페이스X 나스닥 상장(6/12) — AI·우주 밸류체인 글로벌 자금 유입 촉매</div>
+  <div class="cbody">전 세계 이목이 집중된 스페이스X가 오는 6월 12일 나스닥에 상장된다. 유안타증권 김용구 연구원은 "핵심 기업의 가세로 글로벌 투자자의 추가 유입과 AI 밸류체인 대표주로서의 수급 낙수효과 발현 여지가 클 수 있다"고 진단했다. 위성통신·우주발사·스타쉴드 방산 사업 등 AI·인프라·방산 테마가 동시에 적용된다. 국내에서는 한화에어로스페이스·쎄트렉아이·KAI 등 우주·방산 관련주에 수급 효과가 기대된다.</div>
+  <div class="csrc">이투데이 / 유안타증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-msci">6월 중 결정</div>
+  <div class="cheadline">MSCI 선진국 지수 편입 결정 임박 — 성사 시 수십조 패시브 자금 '빅뱅'</div>
+  <div class="cbody">MSCI는 매년 6월 시장 분류 결과를 발표한다. 한국이 선진국 지수에 편입되면 신흥국 지수에서 빠지는 대신 선진국 인덱스 추종 패시브 자금이 대규모로 유입된다. 편입 규모는 수십~100조원 이상으로 추산된다. 이미 코스피가 8700을 돌파한 상황에서 MSCI 선진국 편입이 현실화되면 코스피 1만pt 논의가 구체화될 수 있다. 편입 불발 시 차익실현 빌미로 작용할 수 있어 발표 시점 모니터링이 필요하다.</div>
+  <div class="csrc">이투데이 / 하나증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-warn">과열 경계</div>
+  <div class="cheadline">외국인 17연속 순매도 + 쏠림 장세 — "단기 과열 해소 대비 필요"</div>
+  <div class="cbody">어제도 외국인이 1조 2000억원을 팔며 17거래일 연속 순매도를 기록했다. 대신증권 이경민 연구원은 "6월 코스피 초반 반도체 급등에 따른 추가 상승을 기대하지만, 단기 과열 해소와 매물 소화 국면에 대비해야 한다"고 경고했다. 이란 MOU 서명이 확정되지 않은 상태에서의 기대감 선반영은 서명 지연 시 급격한 차익실현으로 돌아올 수 있다. 레버리지 포지션은 항상 위험 관리 최우선.</div>
+  <div class="csrc">대신증권 / 이투데이</div>
+</div>
+
+<div class="card">
+  <div class="tag t-pos">6월 전망</div>
+  <div class="cheadline">6월 코스피 예상 밴드 8300~9200 — 이란·MSCI·FOMC 3대 촉매 순서대로</div>
+  <div class="cbody">이란 MOU 서명 → 스페이스X 상장(6/12) → MSCI 선진국 편입 결정 → 워시 첫 FOMC(6/17) → 5월 PCE 발표(6월 말) 순으로 6월 이벤트가 줄지어 있다. 각 이벤트가 순차적으로 긍정적으로 나온다면 코스피가 9000을 넘어 1만pt를 향한 논의가 현실화될 수 있다. 반대로 이란 서명 불발 시 차익실현이 급격하게 나올 수 있어, 이란 뉴스 모니터링이 6월 내내 최우선 과제다.</div>
+  <div class="csrc">유안타증권 / 대신증권 / KB자산운용</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">오늘 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">8700 이후 — 이란 서명 전 레버리지 신규 진입 자제</div>
+  <div class="i-body">코스피 8700 돌파는 역사적이지만, 이란 MOU 서명이 확정되지 않은 상태에서의 기대감 선반영이다. 서명 확인 전까지 레버리지 신규 진입을 자제하고, 기존 수익 포지션은 일부 차익실현으로 현금 비중을 확보해 두는 것이 안전하다. 서명 확정 시 유가 급락 → 코스피 9000 논의가 재점화되므로 그때 재진입해도 늦지 않다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">지방선거(내일 6/3) — 건설·SOC·바이오 순환매 기회</div>
+  <div class="i-body">내일 지방선거를 전후로 건설·SOC·바이오클러스터·신재생에너지 관련 정책 테마가 순환매 촉매가 된다. 반도체 쏠림이 과도한 상황에서 소외 섹터로 비중을 일부 이동하기에 좋은 타이밍이다. 스페이스X 상장(6/12)까지 우주·방산 테마도 주목할 필요가 있다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">6월 달력 — 이란→스페이스X→MSCI→FOMC 순서로 체크</div>
+  <div class="i-body">6월은 역대 가장 이벤트가 풍성한 달이다. 이란 MOU가 가장 큰 게임체인저이고, MSCI 선진국 편입은 장기 투자자에게 역대급 수급 이벤트다. 워시 첫 FOMC(6/17)에서 인하 신호가 나오면 코스피 1만pt 논의가 구체화된다. 단계별로 이벤트를 소화하며 비중을 점진적으로 늘리는 전략이 가장 안전하다.</div>
+</div>
+
+<div class="sec-label">6월 핵심 일정</div>
+<div class="next-week">
+  <div class="nw-row hlr"><div class="nw-day">이번 주</div><div class="nw-items">미·이란 <b>MOU 최종 서명</b> — 서명 시 유가 $80대·코스피 9000 논의</div></div>
+  <div class="nw-row hly"><div class="nw-day">6/3 목</div><div class="nw-items">🗳️ <b>지방선거</b> — 건설·SOC·바이오·신재생 정책 테마</div></div>
+  <div class="nw-row hl"><div class="nw-day">6/12 금</div><div class="nw-items">🚀 <b>스페이스X 나스닥 상장</b> — AI·우주·방산 밸류체인 수급 효과</div></div>
+  <div class="nw-row hl"><div class="nw-day">6월 중</div><div class="nw-items">📊 <b>MSCI 선진국 편입 결정</b> — 성사 시 수십조 패시브 유입·코스피 1만pt 논의</div></div>
+  <div class="nw-row hl2"><div class="nw-day">6/17 수</div><div class="nw-items">워시 체제 <b>첫 FOMC</b> — 인하 신호 여부</div></div>
+  <div class="nw-row"><div class="nw-day">6/말</div><div class="nw-items">5월 <b>PCE</b> — 이란 종전 효과 반영 여부</div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
