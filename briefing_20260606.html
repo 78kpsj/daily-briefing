@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.06.06</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .week-banner { background: linear-gradient(135deg, #1a1a18 0%, #2d2a3e 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1rem; }
+  .wb-eye { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#aaa; margin-bottom:.4rem; }
+  .wb-title { font-size:18px; font-weight:700; margin-bottom:.5rem; }
+  .wb-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:.8rem; }
+  .wb-stat { background:rgba(255,255,255,0.08); border-radius:8px; padding:.55rem .75rem; }
+  .wb-stat-l { font-size:10px; color:#9CA3AF; margin-bottom:2px; }
+  .wb-stat-v { font-size:14px; font-weight:700; }
+  .g{color:#6EE7B7;} .r{color:#FCA5A5;} .y{color:#FDE68A;}
+  .warn-banner { background:#FCEBEB; border:1px solid #FCA5A5; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:.75rem; display:flex; gap:10px; }
+  .wb-text { font-size:13px; color:#7F1D1D; line-height:1.65; }
+  .wb-text b { font-weight:700; }
+  .info-banner { background:#FEF3C7; border:1px solid #FDE68A; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:1rem; display:flex; gap:10px; }
+  .ib-text { font-size:13px; color:#78350F; line-height:1.65; }
+  .ib-text b { font-weight:700; }
+  .focus-box { background:#EFF6FF; border:1px solid #BFDBFE; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#1D4ED8; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#1E3A8A; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-iran{background:#FEF3C7;color:#92400E;}
+  .t-jobs{background:#FFF1F2;color:#9F1239;}
+  .t-space{background:#0F172A;color:#93C5FD;}
+  .t-msci{background:#F5F3FF;color:#6D28D9;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .next-week { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .nw-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .nw-row:last-child { border-bottom:none; }
+  .nw-row.hl { background:#DCFCE7; }
+  .nw-row.hl2 { background:#EEEDFE; }
+  .nw-row.hly { background:#FFF8E6; }
+  .nw-row.hlr { background:#FEF3C7; }
+  .nw-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .nw-items { color:#555; line-height:1.65; }
+  .nw-items b { color:#1a1a18; font-weight:600; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } .wb-stats{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 6월 6일 (토) · 현충일 · 주말 총결산</div>
+</div>
+
+<div class="week-banner">
+  <div class="wb-eye">📅 이번 주 결산 (6/1~6/5)</div>
+  <div class="wb-title">고용 서프라이즈 충격 + 이란 교전 격화 — 코스피 혼조, 다음 주가 진짜 분수령</div>
+  <div class="wb-stats">
+    <div class="wb-stat"><div class="wb-stat-l">미국 5월 고용</div><div class="wb-stat-v r">17.2만 서프라이즈</div></div>
+    <div class="wb-stat"><div class="wb-stat-l">12월 금리인상 확률</div><div class="wb-stat-v r">65%로 급등</div></div>
+    <div class="wb-stat"><div class="wb-stat-l">이란 MOU</div><div class="wb-stat-v y">주말 서명 기대</div></div>
+  </div>
+</div>
+
+<div class="warn-banner">
+  <div style="font-size:16px">⚠️</div>
+  <div class="wb-text"><b>고용 17.2만 깜짝 서프라이즈 — 금리 인상 확률 65% 급등:</b> 예상치(9만명)의 두 배. 나스닥 선물 급락 반응. PCE 3.8% + 고용 강세 = 워시 6월 FOMC 인하 불가. 12월 금리 인상 가능성까지 시장이 반영 중.</div>
+</div>
+
+<div class="info-banner">
+  <div style="font-size:16px">🕊️</div>
+  <div class="ib-text"><b>트럼프 "화요일까지 호르무즈 개방 안 하면 발전소 타격":</b> 대화와 위협을 동시에 구사. 이란 반응 주목. 화요일(6/9)이 새로운 데드라인. 이번 주말 MOU 서명 or 군사 충돌 확대 양갈래.</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">다음 주 초점</div>
+  <div class="focus-text">이란 MOU 서명 or 트럼프 발전소 타격 여부(화요일 데드라인) · 코스피 고용 충격 소화 · 6/12 스페이스X 나스닥 상장 · 6월 중 MSCI 선진국 편입 결정 · 6/17 워시 첫 FOMC · 국민연금 국내주식 비중 상향(14.9%→20.8%) 효과</div>
+</div>
+
+<div class="sec-label">이번 주 마감 지표</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">미국 5월 고용</div><div class="mv dn">17.2만</div><div class="mch dn">▼ 예상 9만 대비 서프라이즈</div></div>
+  <div class="mc"><div class="ml">12월 인상 확률</div><div class="mv dn">65%</div><div class="mch dn">▼ 발표 전 48%에서 급등</div></div>
+  <div class="mc"><div class="ml">브렌트유</div><div class="mv up">$105~108</div><div class="mch up">▲ 이란 교전 지속</div></div>
+  <div class="mc"><div class="ml">코스피 이번 주</div><div class="mv neu">혼조</div><div class="mch neu">— 8800 터치 후 조정</div></div>
+</div>
+
+<div class="sec-label">이번 주 핵심 이슈 총정리</div>
+
+<div class="card">
+  <div class="tag t-jobs">🔥 이번 주 최대 충격</div>
+  <div class="cheadline">5월 고용 17.2만 — 예상치 두 배, 12월 금리 인상 확률 65% 급등</div>
+  <div class="cbody">미국 노동통계국이 5일 발표한 5월 비농업 고용은 17만 2000명 증가로, 예상치(8만~8만 5000명)를 크게 웃돌았다. 실업률은 4.3%로 예상에 부합했다. LSEG에 따르면 금리선물 시장은 12월 FOMC 금리 인상 확률을 65%로 반영했다(발표 전 48%). 모간스탠리 웰스매니지먼트 수석 경제전략가는 "연준이 당분간 노동시장보다 인플레이션에 더 집중할 것"이라고 평가했다. PCE 3.8% + 고용 17.2만의 조합은 워시 6월 FOMC 인하를 사실상 불가능하게 만든다. 이란 종전이 성사돼 유가가 $90 아래로 내려와야 인하 기대가 복원된다.</div>
+  <div class="csrc">뉴스핌 / LSEG / 모간스탠리</div>
+</div>
+
+<div class="card">
+  <div class="tag t-iran">트럼프 화요일 데드라인</div>
+  <div class="cheadline">"화요일까지 호르무즈 개방 안 하면 발전소 타격" — 새 울티메이텀</div>
+  <div class="cbody">트럼프 대통령이 이란에 화요일(6/9)까지 호르무즈 해협을 개방하지 않으면 발전소와 에너지 시설을 타격하겠다는 울티메이텀을 보냈다. 이는 협상과 위협을 동시에 구사하는 전략이다. 시나리오: ① 이란이 수용 + MOU 서명 → 유가 $80대 급락 → 인하 기대 복원 → 코스피 급반등 ② 이란 거부 + 미국 군사 타격 → 유가 $120+ → 코스피 급락, 방산주 폭등 ③ 협상 연장 → 현상 유지, 불확실성 지속. 화요일(6/9)이 새로운 최대 분수령이다.</div>
+  <div class="csrc">뉴데일리 / 연합뉴스 / Investing.com</div>
+</div>
+
+<div class="card">
+  <div class="tag t-pos">국민연금 수급 호재</div>
+  <div class="cheadline">국민연금, 국내주식 목표비중 14.9%→20.8% 상향 — 수십조 국내 증시 유입 예정</div>
+  <div class="cbody">국민연금 기금운용위원회가 2026년도 제5차 회의에서 올해 말 국내주식 목표비중을 14.9%에서 20.8%로 대폭 상향하기로 결정했다. 이에 해외주식 비중이 37.2%→34.7%로, 해외채권이 8.0%→7.4%로 축소됐다. 국민연금 AUM 규모를 고려하면 수십조원의 국내 증시 유입이 예정돼 있다. 이는 외국인이 연속 순매도를 지속하는 상황에서 코스피 하방을 강력하게 지지하는 구조적 수급 호재다. 고용 서프라이즈로 인한 단기 충격에도 불구하고 코스피 장기 상승 추세가 유지되는 배경이다.</div>
+  <div class="csrc">삼성금거래소 시황</div>
+</div>
+
+<div class="card">
+  <div class="tag t-space">D-6</div>
+  <div class="cheadline">스페이스X 나스닥 상장 D-6 (6/12) — 이란 불확실성 속에서도 AI·우주·방산 테마</div>
+  <div class="cbody">스페이스X 나스닥 상장이 6일 앞으로 다가왔다. 이란 교전 격화 환경에서 스타쉴드(군사위성) 사업 가치가 더욱 부각된다. AI·우주·방산 복합 테마가 적용되며 글로벌 투자 자금이 유입될 전망이다. 이란 군사 충돌이 확대될수록 역설적으로 방산·우주 테마에는 긍정적 촉매가 된다. 국내 수혜주: 한화에어로스페이스·쎄트렉아이·KAI. 고용 서프라이즈로 전반적 시장이 부담을 받는 상황에서 스페이스X 상장 기대가 우주·방산 섹터의 버팀목이 될 수 있다.</div>
+  <div class="csrc">이투데이 / 유안타증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-msci">6월 중 결정</div>
+  <div class="cheadline">MSCI 선진국 편입 결정 임박 — 고용·이란 불구 구조적 패시브 자금 유입 기대</div>
+  <div class="cbody">MSCI는 6월 중 한국의 선진국 지수 편입 여부를 발표한다. 고용 서프라이즈와 이란 불확실성이 단기 변수지만, 한국의 시장 접근성 개선(공매도 재개·외환시장 개방)이라는 구조적 조건은 변함없다. 편입 결정 시 수십조원 패시브 자금 유입 → 국민연금 비중 상향과 겹쳐 코스피 강력한 수급 지지 구조가 완성된다. 불편입 시 단기 차익실현 빌미. 편입 결정 시점 모니터링이 이번 주 중요 과제다.</div>
+  <div class="csrc">이투데이 / 하나증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-hot">6/17 워시 FOMC</div>
+  <div class="cheadline">워시 첫 FOMC(6/17) — PCE 3.8% + 고용 17.2만, 인하 신호 불가 → 동결 or 인상 경계</div>
+  <div class="cbody">6월 17일 워시 체제 첫 FOMC까지 11일 남았다. PCE 3.8%, 고용 17.2만의 강한 인플레·고용 환경에서 워시가 인하 신호를 줄 가능성은 사실상 소멸됐다. 12월 금리 인상 확률이 65%까지 치솟은 상태. 이란 종전이 성사돼 유가가 $90 이하로 내려와야 FOMC 인하 기대가 복원된다. 워시의 첫 회의 스탠스 — 동결 유지(기본), 매파적 신호(추가 충격), 소수 인상 의견(시장 패닉) 세 시나리오로 대비해야 한다.</div>
+  <div class="csrc">LSEG / 뉴스핌</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">다음 주 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">화요일(6/9) 이란 데드라인 — 양갈래 대응 준비</div>
+  <div class="i-body">MOU 서명 시: 유가 급락 → 에너지 비중 축소, 항공·소비재 확대, 코스피 반등. 군사 타격 시: 유가 $120+ 급등 → 방산·에너지 비중 확대, 코스피 조정. 이란 결과가 나오기 전까지 레버리지 신규 진입 자제. 주말 사이 이란 뉴스를 반드시 확인하고 월요일 개장 방향을 미리 가늠해 두자.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">고용 서프라이즈 소화 — 단기 충격이지만 구조적 호재는 유지</div>
+  <div class="i-body">고용 17.2만은 단기적으로 달러 강세·금리 인상 우려를 키우지만, 이는 경기가 탄탄하다는 증거이기도 하다. 국민연금 국내주식 비중 상향(+5.9%p)이라는 구조적 수급 호재가 하방을 지지한다. 이란 종전이 성사되면 고용 서프라이즈 충격은 빠르게 희석된다. 단기 조정을 이란 서명 후 재진입 기회로 활용하는 전략이 유효하다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">6월 달력 최종 정리 — 이란→스페이스X→MSCI→FOMC 순서</div>
+  <div class="i-body">① 이란 MOU (화요일 데드라인) ② 6/12 스페이스X 나스닥 상장 ③ 6월 중 MSCI 선진국 편입 결정 ④ 6/17 워시 첫 FOMC ⑤ 6월 말 5월 PCE. 이란 서명이 가장 큰 게임체인저다. 서명 없이 군사 충돌이 확대되면 시나리오가 전부 뒤집힌다. 화요일까지의 이란 동향이 이번 주 전략의 핵심이다.</div>
+</div>
+
+<div class="sec-label">다음 주 핵심 일정</div>
+<div class="next-week">
+  <div class="nw-row hlr"><div class="nw-day">주말~월</div><div class="nw-items">이란 반응 주시 · 트럼프 화요일 데드라인 전 최후 협상</div></div>
+  <div class="nw-row hlr"><div class="nw-day">6/9 화</div><div class="nw-items">🚨 이란 <b>화요일 데드라인</b> — MOU 서명 or 트럼프 발전소 타격 · 최대 분수령</div></div>
+  <div class="nw-row hl"><div class="nw-day">6/12 금</div><div class="nw-items">🚀 <b>스페이스X 나스닥 상장</b> — AI·우주·방산 수급 효과</div></div>
+  <div class="nw-row hl"><div class="nw-day">6월 중</div><div class="nw-items">📊 <b>MSCI 선진국 편입 결정</b> — 편입 시 수십조 패시브 유입</div></div>
+  <div class="nw-row hl2"><div class="nw-day">6/17 수</div><div class="nw-items">워시 체제 <b>첫 FOMC</b> — 고용·PCE 환경에서 동결/매파 스탠스</div></div>
+  <div class="nw-row"><div class="nw-day">6/말</div><div class="nw-items">5월 <b>PCE</b> — 이란 종전 효과 반영 여부 첫 확인</div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
