@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.06.15</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .main-banner { background: linear-gradient(135deg, #7C2D12 0%, #B45309 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1rem; }
+  .mb-eye { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#FDE68A; margin-bottom:.4rem; }
+  .mb-title { font-size:18px; font-weight:700; margin-bottom:.4rem; line-height:1.4; }
+  .mb-sub { font-size:13px; color:#FEF3C7; line-height:1.65; }
+  .good-banner { background:#DCFCE7; border:1px solid #86EFAC; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:.75rem; display:flex; gap:10px; }
+  .gb-text { font-size:13px; color:#14532D; line-height:1.65; }
+  .gb-text b { font-weight:700; }
+  .focus-box { background:#EFF6FF; border:1px solid #BFDBFE; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#1D4ED8; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#1E3A8A; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-iran{background:#FEF3C7;color:#92400E;}
+  .t-fomc{background:#1a1a18;color:#fff;}
+  .t-msci{background:#F5F3FF;color:#6D28D9;}
+  .t-macro{background:#FEF0E7;color:#854F0B;}
+  .t-g7{background:#EFF6FF;color:#1D4ED8;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .scenario { background:#f8f7f4; border-radius:8px; padding:.75rem .9rem; margin-top:8px; }
+  .sc-title { font-size:12px; font-weight:700; margin-bottom:3px; }
+  .sc-body { font-size:12px; color:#555; line-height:1.6; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .next-week { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .nw-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .nw-row:last-child { border-bottom:none; }
+  .nw-row.hl { background:#DCFCE7; }
+  .nw-row.hl2 { background:#EEEDFE; }
+  .nw-row.hly { background:#FFF8E6; }
+  .nw-row.hlr { background:#FEF3C7; }
+  .nw-row.hlrr { background:#FCEBEB; }
+  .nw-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .nw-items { color:#555; line-height:1.65; }
+  .nw-items b { color:#1a1a18; font-weight:600; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 6월 15일 (월)</div>
+</div>
+
+<div class="main-banner">
+  <div class="mb-eye">🕊️ 이란 MOU — 오늘 서명 가능성</div>
+  <div class="mb-title">트럼프 "오늘(15일) 서명 가능" · 이란 "아직" — 코스피 반등 기대 속 불확실성</div>
+  <div class="mb-sub">파키스탄 총리 "최종 합의문 도달" · 이란 외무부 "14일엔 아니다" → 오늘 재시도 · 코스피 지난주 8,123 마감 · 이번 주 FOMC(18일) + MSCI(24일) 빅이벤트</div>
+</div>
+
+<div class="good-banner">
+  <div style="font-size:16px">✅</div>
+  <div class="gb-text"><b>파키스탄 총리 "최종 합의문 도달" · 노무라 "MSCI 관찰대상국 편입 가능성 60%":</b> 중재국이 최종 합의문 도달을 공식 선언. MSCI 관찰대상국 편입만 해도 장기 패시브 자금 유입 경로 개설. 이번 주가 진짜 분수령.</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">이번 주 초점</div>
+  <div class="focus-text">이란 MOU 오늘 서명 여부(트럼프 "오늘 가능") · 코스피 8,123 반등 시도 · G7 정상회담(~17일) · 6/18 워시 첫 FOMC · 6/24 MSCI 리뷰(관찰대상국 편입 가능성 60%) · 유가 $86 선반영 확인</div>
+</div>
+
+<div class="sec-label">주요 지표 (6/12 마감)</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">코스피(지난주)</div><div class="mv dn">8,123</div><div class="mch dn">▼ -0.45% 조정 마감</div></div>
+  <div class="mc"><div class="ml">브렌트유</div><div class="mv dn">$86</div><div class="mch dn">▼ 서명 기대 선반영</div></div>
+  <div class="mc"><div class="ml">달러/원</div><div class="mv up">1,495~1,505</div><div class="mch neu">— 이란 불확실성</div></div>
+  <div class="mc"><div class="ml">나스닥</div><div class="mv up">26,800↑</div><div class="mch up">▲ AI 모멘텀 유지</div></div>
+</div>
+
+<div class="sec-label">오늘의 핵심 이슈</div>
+
+<div class="card">
+  <div class="tag t-iran">🔥 오늘 최대 변수</div>
+  <div class="cheadline">트럼프 "오늘(15일) 서명 가능" — 파키스탄 "최종 합의문 도달", 이란만 최종 동의 남아</div>
+  <div class="cbody">트럼프 대통령은 악시오스와의 통화에서 "주말 중이나 내주 월요일(15일)에 MOU 체결 서명식이 가능하리라 생각한다"고 밝혔다. 파키스탄 셰바즈 샤리프 총리는 "최종 합의문(Final, agreed upon text)에 도달했다"고 공식 선언했다. 다만 이란 외무부 대변인은 어제(14일) "14일에는 서명이 이뤄지지 않을 것"이라고 밝혔으며, 이란 측 공식 동의가 오늘 나오느냐가 핵심이다. MOU 내용: 휴전 60일 연장 + 호르무즈 즉각 개방 + 미국 봉쇄 단계 해제 + 이란 핵 프로그램 협상 개시. 서명 시 유가 $80대 급락 → PCE 2%대 → FOMC 인하 기대 폭발적 복원.</div>
+  <div class="csrc">뉴스핌 / 파이낸셜뉴스 / 악시오스</div>
+  <div class="scenario">
+    <div class="sc-title up">✅ 오늘 서명 확정</div>
+    <div class="sc-body">유가 $80대 급락 → 코스피 8500+ 급반등 · 항공·소비재·EV 폭등 · FOMC 인하 기대 복원</div>
+  </div>
+  <div class="scenario" style="margin-top:6px;">
+    <div class="sc-title dn">❌ 또 지연</div>
+    <div class="sc-body">이란 불확실성 지속 → 코스피 8000~8300 박스권 · FOMC 매파 충격 대기</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="tag t-fomc">🗓️ 목요일(6/18)</div>
+  <div class="cheadline">워시 첫 FOMC(6/18) — 이란 서명 여부가 FOMC 방향 결정, 이번 주 최대 매크로 이벤트</div>
+  <div class="cbody">워시 의장 취임 후 첫 FOMC가 목요일(6/18)에 열린다. PCE 3.8%·고용 17.2만 환경에서 금리 인하는 불가능하다. 시장이 12월 인상 확률을 65%로 반영 중. 이란 MOU가 오늘 서명되면 유가 하락이 진행돼 FOMC 전 환경이 개선된다. 워시의 첫 회의 스탠스 — ① 동결·데이터 관망(기본) ② 9월 인하 신호(이란 서명 시) ③ 매파 강화(인하 기대 추가 후퇴). 첫 점도표가 하반기 시장 방향을 사실상 결정한다.</div>
+  <div class="csrc">연합뉴스 / LSEG / 뉴스핌</div>
+</div>
+
+<div class="card">
+  <div class="tag t-msci">6/24 리뷰</div>
+  <div class="cheadline">MSCI 6/24 리뷰 — 관찰대상국 편입 가능성 60%(노무라) · 즉각 편입과 다른 2단계 경로</div>
+  <div class="cbody">MSCI 선진국지수 편입은 즉각 편입이 아닌 먼저 '관찰대상국(Watch List)' 지정 → 이후 실제 편입 2단계로 진행된다. 6월 24일 리뷰에서 관찰대상국 지정 가능성이 60%라는 게 노무라의 평가다. 관찰대상국 지정만 해도 장기 패시브 자금 유입 경로가 열린다는 점에서 코스피에 긍정적이다. 서울 외환시장 24시간 개장 시범거래(5월 29일 시작)가 평가에 변수. 실제 선진국 편입까지는 추가 시간이 필요하지만 관찰대상국 지정 자체가 역사적 이정표다.</div>
+  <div class="csrc">시사저널 / 서울경제 / 노무라증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-g7">G7 정상회담</div>
+  <div class="cheadline">G7 정상회담(~17일) — 이란 종전·AI 거버넌스·무역 3중 의제, 글로벌 공조 시그널</div>
+  <div class="cbody">G7 정상회담이 오늘부터 17일까지 열린다. 이란 종전 문제와 AI 거버넌스, 무역 분쟁 등이 주요 의제다. 이란 MOU 서명이 오늘 이뤄지면 G7에서 종전 지지 성명이 나올 수 있어 유가 하락과 지정학 안정에 추가 호재가 된다. AI 거버넌스 합의는 빅테크 규제 방향에 영향을 주며, 무역 의제는 미중 관계와 연계된다.</div>
+  <div class="csrc">연합뉴스 / 파이낸셜뉴스</div>
+</div>
+
+<div class="card">
+  <div class="tag t-pos">AI 슈퍼사이클 지속</div>
+  <div class="cheadline">노무라 "HBM 트리플 슈퍼사이클 본격화" — 반도체·방산·자동차 코스피 공동 견인</div>
+  <div class="cbody">노무라증권은 최근 브리핑에서 AI 데이터센터 구축이 본격화되면서 HBM·D램·낸드 수요가 동시에 증가하는 '트리플 슈퍼사이클'이 진행 중이라고 진단했다. "AI가 끌고 가는 메모리 수요는 향후 5년간 1만 배 이상 증가할 수 있다"며 반도체와 함께 방산·자동차 등도 증시를 공동 견인할 것으로 전망했다. 이란 종전이 성사되면 유가 하락으로 인한 경기 회복 → 소비재·항공 추가 수혜가 겹쳐 코스피의 업사이드 모멘텀이 더욱 강해지는 구조다.</div>
+  <div class="csrc">서울경제 / 노무라증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-hot">이번 주 전략</div>
+  <div class="cheadline">이란 서명 → FOMC → MSCI 순서 — 3박자 맞으면 코스피 9000~1만pt 논의 재점화</div>
+  <div class="cbody">이번 주는 이란 MOU 서명(오늘) → G7(~17일) → FOMC(18일) → MSCI 24일 리뷰 준비로 이어지는 이벤트 집중 주다. 이란 서명이 오늘 성사되면 유가 급락 → FOMC 환경 개선 → 9월 인하 기대 → MSCI 관찰대상국 편입 기대까지 연결돼 코스피 9000~1만pt 논의가 재점화될 수 있다. 이란 지연 시 FOMC 매파 충격 → 8000선 재테스트 가능성. 오늘 이란 뉴스 모니터링이 이번 주의 전부다.</div>
+  <div class="csrc">파이낸셜뉴스 / 유안타증권</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">오늘 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">오늘 — 이란 MOU 확인 전 신중, 확인 후 즉각 대응</div>
+  <div class="i-body">파키스탄이 "최종 합의문 도달"을 선언했고 트럼프도 오늘 서명 가능성을 언급했다. 이란 공식 동의가 나오는 순간이 매수 타이밍이다. 서명 확인 즉시 에너지·정유 비중 축소, 항공·소비재·EV·성장주 비중 확대. 서명이 또 지연되면 8000~8300 박스권 유지, 분할 매수 전략 유지.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">FOMC(18일) 전 — 이란 서명 여부에 따라 포지션 결정</div>
+  <div class="i-body">이란 서명 + 유가 하락이 확인되면 FOMC에서 9월 인하 신호 가능성이 살아난다. 이 경우 성장주(반도체·AI·소비재) 비중 확대가 유효하다. 이란 지연 시 FOMC 매파 충격에 대비해 현금 비중을 충분히 확보해 두는 것이 안전하다. FOMC 결과 나오기 전까지 레버리지 신규 진입은 자제.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">MSCI 24일 리뷰 준비 — 관찰대상국 편입만 해도 장기 수급 개선</div>
+  <div class="i-body">MSCI 선진국 즉각 편입이 아닌 관찰대상국 지정(확률 60%)도 장기적으로 패시브 자금 유입 경로를 여는 역사적 이정표다. 국민연금 비중 상향과 겹쳐 코스피 수급 구조가 강화된다. 24일 리뷰 전까지 관련 주식 분할 매수를 검토할 수 있다.</div>
+</div>
+
+<div class="sec-label">이번 주 핵심 일정</div>
+<div class="next-week">
+  <div class="nw-row hlr"><div class="nw-day">6/15 오늘</div><div class="nw-items">미·이란 <b>MOU 서명</b> 여부 — 트럼프 "오늘 가능" · 파키스탄 "최종 합의문 도달" · G7 시작</div></div>
+  <div class="nw-row hly"><div class="nw-day">6/16~17</div><div class="nw-items"><b>G7 정상회담</b>(~17일) — 이란 종전 지지·AI 거버넌스·무역</div></div>
+  <div class="nw-row hlrr"><div class="nw-day">6/18 목</div><div class="nw-items">⚡ 워시 체제 <b>첫 FOMC</b> — 점도표 발표 · 9월 인하 신호 여부 · 이번 주 최대 매크로</div></div>
+  <div class="nw-row hl"><div class="nw-day">6/24 화</div><div class="nw-items">📊 <b>MSCI 리뷰</b> — 선진국 관찰대상국 편입 가능성 60% · 노무라 평가</div></div>
+  <div class="nw-row"><div class="nw-day">6/말</div><div class="nw-items">5월 <b>PCE</b> — 이란 종전 효과 반영 여부 첫 확인</div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
