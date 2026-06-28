@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주식투자 데일리 브리핑 — 2026.06.29</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; max-width: 720px; margin: 0 auto; }
+  .hbar { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid #e5e3db; margin-bottom:1.5rem; }
+  .htitle { font-size:20px; font-weight:700; }
+  .hdate { font-size:13px; color:#888; }
+  .main-banner { background: linear-gradient(135deg, #7C2D12 0%, #991B1B 100%); color:#fff; border-radius:14px; padding:1.2rem 1.4rem; margin-bottom:1rem; }
+  .mb-eye { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#FCA5A5; margin-bottom:.4rem; }
+  .mb-title { font-size:18px; font-weight:700; margin-bottom:.4rem; line-height:1.4; }
+  .mb-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:.8rem; }
+  .mb-stat { background:rgba(255,255,255,0.1); border-radius:8px; padding:.55rem .75rem; }
+  .mb-stat-l { font-size:10px; color:#FECACA; margin-bottom:2px; }
+  .mb-stat-v { font-size:14px; font-weight:700; }
+  .warn-banner { background:#FFF8E6; border:1px solid #FDE68A; border-radius:12px; padding:.85rem 1.1rem; margin-bottom:.75rem; display:flex; gap:10px; }
+  .wb-text { font-size:13px; color:#78350F; line-height:1.65; }
+  .wb-text b { font-weight:700; }
+  .focus-box { background:#EFF6FF; border:1px solid #BFDBFE; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:1.25rem; }
+  .focus-label { font-size:11px; font-weight:700; color:#1D4ED8; letter-spacing:.06em; text-transform:uppercase; margin-bottom:5px; }
+  .focus-text { font-size:13px; color:#1E3A8A; line-height:1.7; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:1.5rem; }
+  .mc { background:#fff; border:1px solid #e8e6de; border-radius:8px; padding:.7rem .9rem; }
+  .ml { font-size:11px; color:#888; margin-bottom:3px; }
+  .mv { font-size:16px; font-weight:700; }
+  .mch { font-size:11px; margin-top:2px; }
+  .up{color:#D85A30;} .dn{color:#378ADD;} .neu{color:#888;}
+  .sec-label { font-size:11px; font-weight:700; color:#888; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.75rem; margin-top:1.5rem; }
+  .card { background:#fff; border:1px solid #e8e6de; border-radius:12px; padding:.9rem 1.1rem; margin-bottom:10px; }
+  .tag { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:4px; margin-bottom:6px; }
+  .t-hot{background:#EEEDFE;color:#534AB7;}
+  .t-pos{background:#EAF3DE;color:#3B6D11;}
+  .t-warn{background:#FCEBEB;color:#A32D2D;}
+  .t-semi{background:#E6F1FB;color:#185FA5;}
+  .t-msci{background:#F5F3FF;color:#6D28D9;}
+  .t-fx{background:#FEF3C7;color:#92400E;}
+  .t-cycle{background:#FEF0E7;color:#854F0B;}
+  .cheadline { font-size:14px; font-weight:700; line-height:1.45; margin-bottom:5px; }
+  .cbody { font-size:13px; color:#555; line-height:1.7; }
+  .csrc { font-size:11px; color:#aaa; margin-top:5px; }
+  .divider { height:1px; background:#e8e6de; margin:1.5rem 0; }
+  .insight { background:#f4f3ff; border-left:3px solid #7F77DD; border-radius:0 8px 8px 0; padding:.85rem 1.1rem; margin-bottom:10px; }
+  .i-title { font-size:13px; font-weight:700; margin-bottom:4px; }
+  .i-body { font-size:13px; color:#555; line-height:1.7; }
+  .next-week { background:#fff; border:1px solid #e8e6de; border-radius:12px; overflow:hidden; }
+  .nw-row { display:flex; gap:12px; padding:.75rem 1rem; border-bottom:1px solid #f0eeea; font-size:13px; }
+  .nw-row:last-child { border-bottom:none; }
+  .nw-row.hl { background:#DCFCE7; }
+  .nw-row.hl2 { background:#EEEDFE; }
+  .nw-row.hly { background:#FFF8E6; }
+  .nw-row.hlr { background:#FCEBEB; }
+  .nw-day { font-weight:700; color:#534AB7; min-width:50px; flex-shrink:0; }
+  .nw-items { color:#555; line-height:1.65; }
+  .nw-items b { color:#1a1a18; font-weight:600; }
+  .footer { font-size:11px; color:#bbb; padding-top:.75rem; border-top:1px solid #e8e6de; margin-top:1.5rem; line-height:1.7; }
+  @media(max-width:480px){ .grid4{ grid-template-columns:repeat(2,1fr); } .mb-stats{ grid-template-columns:repeat(2,1fr); } }
+</style>
+</head>
+<body>
+
+<div class="hbar">
+  <div class="htitle">📊 주식투자 데일리 브리핑</div>
+  <div class="hdate">2026년 6월 29일 (월)</div>
+</div>
+
+<div class="main-banner">
+  <div class="mb-eye">🚨 지난주 '검은 금요일' — 코스피 5.8% 급락</div>
+  <div class="mb-title">MSCI 12년째 편입 실패 + 반도체 과열 경계 + 외국인 대량 매도 — 트리플 충격</div>
+  <div class="mb-stats">
+    <div class="mb-stat"><div class="mb-stat-l">26일 마감</div><div class="mb-stat-v">8,411 (-5.8%)</div></div>
+    <div class="mb-stat"><div class="mb-stat-l">MSCI 결과</div><div class="mb-stat-v">관찰대상국 탈락</div></div>
+    <div class="mb-stat"><div class="mb-stat-l">오늘부터</div><div class="mb-stat-v">외환 24시간 시범</div></div>
+  </div>
+</div>
+
+<div class="warn-banner">
+  <div style="font-size:16px">⚠️</div>
+  <div class="wb-text"><b>BCA 리서치 "한국이 글로벌 랠리에서 가장 과열된 증시":</b> 투기적 매수 과열 경고가 나온 뒤 26일 매도 사이드카+서킷브레이커가 동시 발동됐다. 삼성전자·SK하이닉스 4종목이 코스피 비중의 절반(49.49%)을 차지하는 극단적 쏠림이 변동성 확대의 핵심 원인.</div>
+</div>
+
+<div class="focus-box">
+  <div class="focus-label">오늘의 핵심 초점</div>
+  <div class="focus-text">오늘 국내 외환시장 24시간 개장 시범거래 시작(7/6 본거래) · 급락 후 반등 시도 vs 추가 조정 · 반도체 쏠림(49.49%) 리스크 · MSCI 재도전은 2027년 6월 · 7월 초 삼성전자 2분기 실적 가이던스</div>
+</div>
+
+<div class="sec-label">주요 지표 (6/26 마감)</div>
+<div class="grid4">
+  <div class="mc"><div class="ml">코스피</div><div class="mv dn">8,411</div><div class="mch dn">▼ -5.8% 검은 금요일</div></div>
+  <div class="mc"><div class="ml">달러/원</div><div class="mv up">1,542</div><div class="mch up">▲ MSCI 실패 후 약세</div></div>
+  <div class="mc"><div class="ml">반도체 4종목 비중</div><div class="mv warn">49.49%</div><div class="mch dn">▲ 역대 최고 쏠림</div></div>
+  <div class="mc"><div class="ml">외국인</div><div class="mv dn">대량 순매도</div><div class="mch dn">▼ 과열 경계 매물</div></div>
+</div>
+
+<div class="sec-label">오늘의 핵심 이슈</div>
+
+<div class="card">
+  <div class="tag t-msci">MSCI 12번째 도전 실패</div>
+  <div class="cheadline">한국, 선진국 지수 관찰대상국 또 탈락 — "역외 원화 결제·야간 외환 유동성 부족"</div>
+  <div class="cbody">MSCI는 6월 23일(현지시간) 공개한 '2026년 연례 시장 분류 결과'에서 한국 증시를 선진국 지수 관찰대상국에 올리지 않았다. 2014년 이후 12년째 신흥시장 지위에 머물게 됐다. MSCI는 "한국 당국의 개혁 의지는 인지하고 있으나, 글로벌 투자자들은 역외 외환시장 원화 환전 제한, 야간 외환시장 유동성 부족 등 근본적인 문제들이 아직 완전히 해결되지 않았다는 의견을 보였다"고 밝혔다. NH투자증권 김규진 연구원은 "내년 1분기 중 제도 개편 로드맵이 완료되면 6월에 관찰대상국 등재가 가능할 것"이라며 "2028년 6월 선진국 지수 편입 발표를 거쳐 2029년 6월 실제 편입이 이뤄지는 시나리오가 유효하다"고 전망했다.</div>
+  <div class="csrc">파이낸셜뉴스 / NH투자증권 / 삼성증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-warn">🚨 검은 금요일</div>
+  <div class="cheadline">코스피 -5.8% 급락 8,411 — 매도 사이드카+서킷브레이커 동시 발동</div>
+  <div class="cbody">26일 코스피가 외국인 대규모 매도세에 5.8% 급락하며 8,411선까지 후퇴했다. 매도 사이드카와 서킷브레이커가 동시에 발동되는 극심한 변동성을 보였다. BCA 리서치는 "한국이 글로벌 랠리에서 가장 과열된 증시로 부상했으며 투기적 매수가 위험 수준에 도달했다"고 경고한 바 있다. MSCI 편입 실패가 트리거가 됐지만, 근본적으로는 반도체 슈퍼사이클 랠리에 따른 단기 과열이 누적된 결과로 해석된다. 빚투(신용융자) 개미들의 반대매매 물량 증가도 하락을 가속화했다.</div>
+  <div class="csrc">투데이코리아 / 인포스탁데일리 / BCA리서치</div>
+</div>
+
+<div class="card">
+  <div class="tag t-cycle">쏠림 리스크</div>
+  <div class="cheadline">삼성전자·SK하이닉스 등 4종목 비중 49.49% — 역대 최고 쏠림 장세 부메랑</div>
+  <div class="cbody">2026년 1월 2일 38.83%였던 코스피 시총 상위 4종목(삼성전자·SK하이닉스·삼성전자우·SK스퀘어) 비중이 5월 6일 49.49%까지 치솟았다. 이는 1년간 D램·낸드 가격 폭등에 따른 삼성전자·SK하이닉스 주가 급등(각각 +436%/+1000%, 2025년 6월~2026년 5월 28일 기준)이 만든 극단적 쏠림이다. 평소엔 지수를 끌어올리는 동력이지만, 반도체주에 조정이 오면 코스피 전체가 동반 급락하는 구조적 약점으로 작용한다. 26일 급락도 이 쏠림 구조가 하락을 증폭시킨 핵심 요인이다.</div>
+  <div class="csrc">나무위키 / 코스피 통계</div>
+</div>
+
+<div class="card">
+  <div class="tag t-fx">오늘 시작</div>
+  <div class="cheadline">국내 외환시장 24시간 개장 시범거래 오늘 시작 — 7/6 본거래, MSCI 재도전 핵심 카드</div>
+  <div class="cbody">정부는 오늘(29일) 국내 외환시장 24시간 개장을 위한 시범거래를 시작하고, 다음 달 6일 본거래에 들어간다. 이는 MSCI가 핵심 미흡 사항으로 지적한 '야간 외환시장 유동성 부족' 문제를 해결하기 위한 조치다. 역외 원화결제망 구축은 아직 시행 전으로, 9월 시범운영 후 내년 1월 본 운영을 목표로 한다. 39개 로드맵 과제 중 25개(64%)가 이미 완료된 상태로, 이 같은 제도 개선이 누적되면 2027년 6월 재도전에서 관찰대상국 등재 가능성이 높아질 것으로 평가된다.</div>
+  <div class="csrc">파이낸셜뉴스 / 금융위원회</div>
+</div>
+
+<div class="card">
+  <div class="tag t-pos">중장기 시각</div>
+  <div class="cheadline">증권가 "MSCI 실패는 예견된 결과 — 2029년 실제 편입 시나리오는 유효"</div>
+  <div class="cbody">증권가는 이번 MSCI 탈락을 이미 예견된 결과로 받아들이고 있다. MSCI가 19일 발표한 '시장 접근성 리뷰'에서 한국의 마이너스 항목이 작년 6개에서 5개로 단 1개만 줄어, 선진시장 국가들의 평균(1개 이하)에 못 미쳤기 때문이다. 김동영 삼성증권 연구원은 "MSCI는 제도 변경 그 자체보다 실제 글로벌 투자자들의 경험적 트랙 레코드를 철저히 검증하는 성향이 강하다"고 분석했다. 다만 영문 공시 확대·외환시장 개방·밸류업 등 제도 개선이 코리아 디스카운트 해소에는 이미 긍정적으로 작용하고 있다는 평가가 중론이다. MSCI 편입은 단기 호재가 아닌 장기 구조 개선 스토리로 접근해야 한다.</div>
+  <div class="csrc">파이낸셜뉴스 / NH투자증권 / 삼성증권</div>
+</div>
+
+<div class="card">
+  <div class="tag t-semi">7월 실적 시즌 대기</div>
+  <div class="cheadline">7월 초 삼성전자 2분기 실적 가이던스 — 급락 이후 펀더멘털 재확인 분수령</div>
+  <div class="cbody">MSCI 실패와 검은 금요일 급락으로 단기 투자심리가 위축됐지만, 반도체 슈퍼사이클의 펀더멘털은 변하지 않았다. 7월 초 삼성전자가 2분기 실적 가이던스를 발표하면 HBM·D램 슈퍼사이클의 지속 여부가 다시 확인된다. 실적이 견조하게 나오면 이번 급락은 과열 해소 과정으로 평가되며 반등 모멘텀이 될 수 있다. 반대로 실적 둔화 신호가 나오면 쏠림 리스크가 추가로 부각될 수 있다. 이번 주는 급락 후 반등 시도와 추가 조정 사이에서 방향을 탐색하는 구간이 될 전망이다.</div>
+  <div class="csrc">증권가 컨센서스</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="sec-label">오늘 투자 전략</div>
+
+<div class="insight">
+  <div class="i-title">오늘 — 급락 후 첫 반등 시도, 신중한 관망 필요</div>
+  <div class="i-body">지난주 검은 금요일 이후 오늘 개장 초 변동성이 클 수 있다. MSCI 실패라는 단기 충격은 소화됐지만, 반도체 쏠림 리스크와 빚투 반대매물 우려가 여전하다. 무리한 저점 매수보다 시장이 안정을 찾는지 먼저 확인하는 것이 안전하다. 외환시장 24시간 시범거래 첫날 환율 변동성도 주시해야 한다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">쏠림 리스크 관리 — 반도체 비중 점검 필수</div>
+  <div class="i-body">삼성전자·SK하이닉스 등 4종목이 코스피의 절반을 차지하는 구조는 상승기엔 축복이지만 하락기엔 독이 된다. 반도체 비중이 과도하다면 이번 조정을 계기로 일부 차익실현하고 조선·방산·금융 등 소외 섹터로 분산하는 리밸런싱을 고려할 만하다. 레버리지 ETF 보유자는 변동성 확대 구간에서 특히 주의가 필요하다.</div>
+</div>
+
+<div class="insight">
+  <div class="i-title">MSCI는 장기 스토리 — 단기 실망보다 로드맵 진행 상황 추적</div>
+  <div class="i-body">MSCI 편입 실패는 실망스럽지만 2027년 6월 재도전, 2029년 실제 편입이라는 장기 시나리오는 여전히 유효하다. 오늘부터 시작되는 외환시장 24시간 거래, 역외 원화결제망 구축(9월 시범) 등 제도 개선이 쌓이고 있다. 단기 실망 매물에 휩쓸리기보다 7월 실적 시즌과 제도 개선 진행 상황을 함께 지켜보는 것이 현명하다.</div>
+</div>
+
+<div class="sec-label">이번 주 핵심 일정</div>
+<div class="next-week">
+  <div class="nw-row hlr"><div class="nw-day">6/29 오늘</div><div class="nw-items">국내 외환시장 <b>24시간 개장 시범거래</b> 시작 · 검은 금요일 이후 첫 반등 시도</div></div>
+  <div class="nw-row"><div class="nw-day">이번 주</div><div class="nw-items">반도체 쏠림 리스크 소화 · 빚투 반대매물 추이 · 추가 변동성 가능성</div></div>
+  <div class="nw-row hl2"><div class="nw-day">7/6</div><div class="nw-items">외환시장 24시간 <b>본거래</b> 시작 — MSCI 재도전 핵심 인프라 완성</div></div>
+  <div class="nw-row hl"><div class="nw-day">7월 초</div><div class="nw-items">삼성전자 <b>2분기 실적 가이던스</b> — 반도체 슈퍼사이클 펀더멘털 재확인</div></div>
+  <div class="nw-row"><div class="nw-day">9월</div><div class="nw-items">역외 원화결제망 <b>시범운영</b> 시작 (내년 1월 본운영)</div></div>
+  <div class="nw-row"><div class="nw-day">2027/6</div><div class="nw-items">MSCI <b>재도전</b> — 관찰대상국 등재 여부 차기 분수령</div></div>
+</div>
+
+<div class="footer">
+  본 브리핑은 매일경제·한국경제·서울경제·조선비즈·파이낸셜뉴스 등 보도 및 공개 자료를 바탕으로 정보 제공 목적으로 작성됐습니다. 투자 판단과 책임은 본인에게 있습니다.
+</div>
+</body>
+</html>
